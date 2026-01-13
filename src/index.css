@@ -244,6 +244,163 @@
     box-shadow: 0 0 30px hsl(var(--primary) / 0.4),
                 0 10px 40px -10px hsl(var(--primary) / 0.3);
   }
+
+  /* Pulse animation */
+  .pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(var(--gold) / 0.3),
+                  0 0 40px hsl(var(--gold) / 0.1);
+    }
+    50% {
+      box-shadow: 0 0 30px hsl(var(--gold) / 0.5),
+                  0 0 60px hsl(var(--gold) / 0.2);
+    }
+  }
+
+  /* Float animation */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Rotate animation */
+  .rotate-slow {
+    animation: rotateSlow 20s linear infinite;
+  }
+
+  @keyframes rotateSlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  /* Sparkle effect */
+  .sparkle {
+    position: relative;
+  }
+
+  .sparkle::before,
+  .sparkle::after {
+    content: '✦';
+    position: absolute;
+    font-size: 0.75rem;
+    color: hsl(var(--gold));
+    animation: sparkle 2s ease-in-out infinite;
+  }
+
+  .sparkle::before {
+    top: -5px;
+    left: -10px;
+    animation-delay: 0s;
+  }
+
+  .sparkle::after {
+    bottom: -5px;
+    right: -10px;
+    animation-delay: 1s;
+  }
+
+  @keyframes sparkle {
+    0%, 100% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 1; transform: scale(1); }
+  }
+
+  /* Gradient border animation */
+  .gradient-border {
+    position: relative;
+    background: hsl(var(--card));
+    z-index: 0;
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    z-index: -1;
+    background: linear-gradient(
+      45deg,
+      hsl(var(--gold)),
+      hsl(var(--primary)),
+      hsl(var(--gold)),
+      hsl(var(--primary))
+    );
+    background-size: 400% 400%;
+    animation: gradientBorder 4s ease infinite;
+    border-radius: inherit;
+  }
+
+  @keyframes gradientBorder {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Reveal on scroll */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Text reveal animation */
+  .text-reveal {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--foreground)) 0%,
+      hsl(var(--gold)) 50%,
+      hsl(var(--foreground)) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textReveal 3s linear infinite;
+  }
+
+  @keyframes textReveal {
+    to { background-position: 200% center; }
+  }
+
+  /* Magnetic hover effect */
+  .magnetic {
+    transition: transform 0.3s ease-out;
+  }
+
+  .magnetic:hover {
+    transform: scale(1.05);
+  }
+
+  /* Underline animation */
+  .underline-animation {
+    position: relative;
+  }
+
+  .underline-animation::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, hsl(var(--gold)), hsl(var(--primary)));
+    transition: width 0.3s ease;
+  }
+
+  .underline-animation:hover::after {
+    width: 100%;
+  }
 }
 
 /* Scrollbar elegante */
