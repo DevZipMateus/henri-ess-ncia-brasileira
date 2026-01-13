@@ -77,14 +77,20 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a
-              href="#produtos"
+              href="/vitrine"
               className="px-8 py-3 bg-primary text-primary-foreground font-body text-sm font-medium tracking-wider uppercase hover:bg-primary/90 transition-all duration-300 shadow-elegant"
+            >
+              Ver nossa vitrine
+            </a>
+            <a
+              href="#produtos"
+              className="px-8 py-3 border border-white/40 text-white font-body text-sm font-medium tracking-wider uppercase hover:bg-white/10 hover:border-white/60 transition-all duration-300 backdrop-blur-sm"
             >
               Conheça nossos produtos
             </a>
             <a
               href="https://wa.me/5517996596204"
-              className="px-8 py-3 border border-white/40 text-white font-body text-sm font-medium tracking-wider uppercase hover:bg-white/10 hover:border-white/60 transition-all duration-300 backdrop-blur-sm"
+              className="px-8 py-3 border border-gold/60 text-gold font-body text-sm font-medium tracking-wider uppercase hover:bg-gold/10 hover:border-gold transition-all duration-300 backdrop-blur-sm"
             >
               Fale conosco
             </a>
