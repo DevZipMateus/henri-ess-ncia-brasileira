@@ -11,17 +11,16 @@ const navItems = [
 ];
 
 const HEADER_HEIGHT = 80;
-const BADGE_HEIGHT = 63;
 
 const Vitrine = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [iframeHeight, setIframeHeight] = useState(
-    window.innerHeight - HEADER_HEIGHT - BADGE_HEIGHT
+    window.innerHeight - HEADER_HEIGHT
   );
 
   useEffect(() => {
     const handleResize = () => {
-      setIframeHeight(window.innerHeight - HEADER_HEIGHT - BADGE_HEIGHT);
+      setIframeHeight(window.innerHeight - HEADER_HEIGHT);
     };
 
     window.addEventListener("resize", handleResize);
