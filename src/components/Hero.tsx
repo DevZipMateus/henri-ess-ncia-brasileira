@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroSkyline from "@/assets/hero-skyline.png";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroSkyline})` }}
+        style={{ backgroundImage: `url(${heroBg})` }}
       />
       
       {/* Dark overlay for text readability */}
