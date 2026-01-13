@@ -5,6 +5,7 @@ import { ExternalLink, ShoppingBag, Sparkles } from "lucide-react";
 import perfumesArabes from "@/assets/perfumes-arabes.jpg";
 import perfumesOrientais from "@/assets/perfumes-orientais.png";
 import linhaHome from "@/assets/linha-home.jpg";
+import henriCo from "@/assets/henri-co.jpg";
 
 const products = [
   {
@@ -25,7 +26,7 @@ const products = [
   {
     title: "Henri.Co",
     description: "Nossa marca própria de acessórios, linha home e cosméticos exclusivos desenvolvidos com excelência.",
-    image: "https://images.unsplash.com/photo-1608528577891-eb055944f2e7?q=80&w=800",
+    image: henriCo,
   },
 ];
 
