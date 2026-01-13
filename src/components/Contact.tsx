@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Clock, Instagram, Mail, MapPin, Phone } from "lucide-react";
@@ -6,15 +6,26 @@ import dubaiNight from "@/assets/dubai-night.jpg";
 
 const Contact = () => {
   const ref = useRef(null);
+  const parallaxRef = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const { scrollYProgress } = useScroll({
+    target: parallaxRef,
+    offset: ["start end", "end start"]
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], ["-20%", "20%"]);
 
   return (
     <section id="contato" className="relative" ref={ref}>
       {/* Background Image Banner */}
-      <div className="relative h-[30vh] min-h-[250px] overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${dubaiNight})` }}
+      <div className="relative h-[30vh] min-h-[250px] overflow-hidden" ref={parallaxRef}>
+        <motion.div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-125"
+          style={{ 
+            backgroundImage: `url(${dubaiNight})`,
+            y 
+          }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/50 to-background" />
         

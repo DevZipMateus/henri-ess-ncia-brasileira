@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Gem, Heart, Shield, Star } from "lucide-react";
@@ -29,15 +29,26 @@ const values = [
 
 const About = () => {
   const ref = useRef(null);
+  const parallaxRef = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const { scrollYProgress } = useScroll({
+    target: parallaxRef,
+    offset: ["start end", "end start"]
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], ["-20%", "20%"]);
 
   return (
     <section id="sobre" className="relative" ref={ref}>
       {/* Hero Image Section */}
-      <div className="relative h-[50vh] min-h-[400px] overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${mesquitaSunset})` }}
+      <div className="relative h-[50vh] min-h-[400px] overflow-hidden" ref={parallaxRef}>
+        <motion.div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-125"
+          style={{ 
+            backgroundImage: `url(${mesquitaSunset})`,
+            y 
+          }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/40 to-background" />
         
