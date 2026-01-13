@@ -17,7 +17,7 @@ const Hero = () => {
     <section
       id="inicio"
       ref={ref}
-      className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 overflow-hidden"
     >
       {/* Background Image with Parallax */}
       <motion.div 
@@ -31,13 +31,13 @@ const Hero = () => {
       {/* Animated gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-charcoal/70 via-charcoal/50 to-charcoal/80" />
       
-      {/* Decorative circles */}
-      <div className="absolute top-1/4 left-10 w-64 h-64 bg-gold/5 rounded-full blur-3xl float" />
-      <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl float" style={{ animationDelay: '3s' }} />
+      {/* Decorative circles - hidden on mobile for performance */}
+      <div className="hidden sm:block absolute top-1/4 left-4 md:left-10 w-32 md:w-64 h-32 md:h-64 bg-gold/5 rounded-full blur-3xl float" />
+      <div className="hidden sm:block absolute bottom-1/4 right-4 md:right-10 w-48 md:w-96 h-48 md:h-96 bg-primary/5 rounded-full blur-3xl float" style={{ animationDelay: '3s' }} />
 
       <motion.div 
         style={{ opacity }}
-        className="container mx-auto px-4 relative z-10"
+        className="container mx-auto px-2 sm:px-4 relative z-10"
       >
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           {/* Logo animada */}
@@ -45,12 +45,12 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.8, rotateY: -30 }}
             animate={{ opacity: 1, scale: 1, rotateY: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="mb-10 float"
+            className="mb-6 sm:mb-10 float"
           >
             <img
               src="/logo.png"
               alt="Henri Perfumaria"
-              className="w-64 md:w-80 lg:w-96 h-auto drop-shadow-lg brightness-110"
+              className="w-40 sm:w-64 md:w-80 lg:w-96 h-auto drop-shadow-lg brightness-110"
             />
           </motion.div>
 
@@ -59,7 +59,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-display text-5xl md:text-7xl lg:text-8xl font-light text-white tracking-wide mb-6 drop-shadow-lg text-glow"
+            className="font-display text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-light text-white tracking-wide mb-4 sm:mb-6 drop-shadow-lg text-glow"
           >
             Henri Perfumaria
           </motion.h1>
@@ -69,7 +69,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-display text-xl md:text-2xl lg:text-3xl font-light text-white/90 italic mb-4"
+            className="font-display text-base sm:text-xl md:text-2xl lg:text-3xl font-light text-white/90 italic mb-3 sm:mb-4 px-2"
           >
             Onde a autenticidade encontra o luxo
           </motion.h2>
@@ -78,11 +78,11 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="font-display text-lg md:text-xl text-gold italic mb-12 flex items-center gap-2"
+            className="font-display text-sm sm:text-lg md:text-xl text-gold italic mb-8 sm:mb-12 flex items-center gap-2 px-2"
           >
-            <Sparkles className="w-5 h-5" />
-            E a elegância se transforma em essência.
-            <Sparkles className="w-5 h-5" />
+            <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+            <span>E a elegância se transforma em essência.</span>
+            <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
           </motion.p>
 
           {/* Linha decorativa animada */}
@@ -90,7 +90,7 @@ const Hero = () => {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="w-32 h-0.5 gradient-gold mb-12 glow-gold"
+            className="w-24 sm:w-32 h-0.5 gradient-gold mb-8 sm:mb-12 glow-gold"
           />
 
           {/* CTA Buttons */}
@@ -98,25 +98,25 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto px-2 sm:px-0"
           >
             <a
               href="/vitrine"
-              className="group px-8 py-3 gradient-gold text-black font-body text-sm font-semibold tracking-wider uppercase transition-all duration-300 glow-gold hover:scale-105 flex items-center gap-2"
+              className="group px-6 sm:px-8 py-3 gradient-gold text-black font-body text-xs sm:text-sm font-semibold tracking-wider uppercase transition-all duration-300 glow-gold hover:scale-105 flex items-center justify-center gap-2"
             >
-              <Sparkles className="w-4 h-4 group-hover:rotate-12 transition-transform" />
+              <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 group-hover:rotate-12 transition-transform" />
               Ver nossa vitrine
-              <Sparkles className="w-4 h-4 group-hover:-rotate-12 transition-transform" />
+              <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 group-hover:-rotate-12 transition-transform" />
             </a>
             <a
               href="#produtos"
-              className="px-8 py-3 border border-white/40 text-white font-body text-sm font-medium tracking-wider uppercase hover:bg-white/10 hover:border-white/60 transition-all duration-300 backdrop-blur-sm hover:scale-105"
+              className="px-6 sm:px-8 py-3 border border-white/40 text-white font-body text-xs sm:text-sm font-medium tracking-wider uppercase hover:bg-white/10 hover:border-white/60 transition-all duration-300 backdrop-blur-sm hover:scale-105 text-center"
             >
               Conheça nossos produtos
             </a>
             <a
               href="https://wa.me/5517996596204"
-              className="px-8 py-3 border border-gold/60 text-gold font-body text-sm font-medium tracking-wider uppercase hover:bg-gold/10 hover:border-gold transition-all duration-300 backdrop-blur-sm hover:scale-105"
+              className="px-6 sm:px-8 py-3 border border-gold/60 text-gold font-body text-xs sm:text-sm font-medium tracking-wider uppercase hover:bg-gold/10 hover:border-gold transition-all duration-300 backdrop-blur-sm hover:scale-105 text-center"
             >
               Fale conosco
             </a>

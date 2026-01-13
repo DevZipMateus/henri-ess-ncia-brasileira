@@ -19,7 +19,7 @@ const Contact = () => {
   return (
     <section id="contato" className="relative" ref={ref}>
       {/* Background Image Banner */}
-      <div className="relative h-[30vh] min-h-[250px] overflow-hidden" ref={parallaxRef}>
+      <div className="relative h-[25vh] sm:h-[30vh] min-h-[200px] sm:min-h-[250px] overflow-hidden" ref={parallaxRef}>
         <motion.div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-125"
           style={{ 
@@ -29,49 +29,49 @@ const Contact = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/50 to-background" />
         
-        <div className="relative z-10 h-full flex items-center justify-center">
+        <div className="relative z-10 h-full flex items-center justify-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h2 className="font-display text-4xl md:text-5xl font-light text-white mb-4 drop-shadow-lg">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-light text-white mb-3 sm:mb-4 drop-shadow-lg">
               Contato
             </h2>
-            <div className="w-16 h-px bg-gradient-to-r from-transparent via-gold to-transparent mx-auto" />
+            <div className="w-12 sm:w-16 h-px bg-gradient-to-r from-transparent via-gold to-transparent mx-auto" />
           </motion.div>
         </div>
       </div>
 
       {/* Content */}
-      <div className="py-24 bg-section-gradient">
-        <div className="container mx-auto px-4">
+      <div className="py-12 sm:py-16 md:py-24 bg-section-gradient">
+        <div className="container mx-auto px-4 sm:px-6">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="font-body text-muted-foreground max-w-2xl mx-auto text-center mb-16"
+            className="font-body text-muted-foreground max-w-2xl mx-auto text-center mb-10 sm:mb-16 text-sm sm:text-base"
           >
             Visite nossa loja ou entre em contato para uma experiência olfativa única e personalizada.
           </motion.p>
 
-          <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 max-w-5xl mx-auto">
             {/* Contact Info */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="space-y-8"
+              className="space-y-6 sm:space-y-8"
             >
               {/* Atendimento Personalizado */}
-              <div className="flex gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Star className="w-5 h-5 text-primary" />
+              <div className="flex gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Star className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-display text-xl text-foreground mb-1">Atendimento</h3>
-                  <p className="font-body text-muted-foreground">
+                  <h3 className="font-display text-lg sm:text-xl text-foreground mb-1">Atendimento</h3>
+                  <p className="font-body text-sm sm:text-base text-muted-foreground">
                     Atendimento personalizado<br />
                     para mais exclusividade
                   </p>
@@ -79,15 +79,15 @@ const Contact = () => {
               </div>
 
               {/* Phone */}
-              <div className="flex gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 h-5 text-primary" />
+              <div className="flex gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-display text-xl text-foreground mb-1">Telefone</h3>
+                  <h3 className="font-display text-lg sm:text-xl text-foreground mb-1">Telefone</h3>
                   <a
                     href="https://wa.me/5517996596204"
-                    className="font-body text-muted-foreground hover:text-primary transition-colors"
+                    className="font-body text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors"
                   >
                     (17) 99659-6204
                   </a>
@@ -95,27 +95,13 @@ const Contact = () => {
               </div>
 
               {/* Hours */}
-              <div className="flex gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-5 h-5 text-primary" />
+              <div className="flex gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-display text-xl text-foreground mb-1">Horário de funcionamento</h3>
-                  <p className="font-body text-muted-foreground">
-                    Segunda a Sábado: 09:00 às 20:00<br />
-                    Domingo: 11:00 às 17:00
-                  </p>
-                </div>
-              </div>
-
-              {/* Hours */}
-              <div className="flex gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-display text-xl text-foreground mb-1">Horário de funcionamento</h3>
-                  <p className="font-body text-muted-foreground">
+                  <h3 className="font-display text-lg sm:text-xl text-foreground mb-1">Horário de funcionamento</h3>
+                  <p className="font-body text-sm sm:text-base text-muted-foreground">
                     Segunda a Sábado: 09:00 às 20:00<br />
                     Domingo: 11:00 às 17:00
                   </p>
@@ -123,17 +109,17 @@ const Contact = () => {
               </div>
 
               {/* Instagram */}
-              <div className="flex gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Instagram className="w-5 h-5 text-primary" />
+              <div className="flex gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-display text-xl text-foreground mb-1">Instagram</h3>
+                  <h3 className="font-display text-lg sm:text-xl text-foreground mb-1">Instagram</h3>
                   <a
                     href="https://www.instagram.com/perfumaria.henri"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-body text-muted-foreground hover:text-primary transition-colors"
+                    className="font-body text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors"
                   >
                     @perfumaria.henri
                   </a>
@@ -146,17 +132,17 @@ const Contact = () => {
               initial={{ opacity: 0, x: 30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="glass-card rounded-sm p-8 md:p-10 flex flex-col justify-center"
+              className="glass-card rounded-sm p-6 sm:p-8 md:p-10 flex flex-col justify-center"
             >
-              <h3 className="font-display text-2xl md:text-3xl text-foreground mb-4 text-center">
+              <h3 className="font-display text-xl sm:text-2xl md:text-3xl text-foreground mb-3 sm:mb-4 text-center">
                 Agende sua visita
               </h3>
-              <p className="font-body text-muted-foreground text-center mb-8 leading-relaxed">
+              <p className="font-body text-muted-foreground text-center mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
                 Venha conhecer nossa curadoria exclusiva de perfumes importados e árabes. Oferecemos um atendimento personalizado para ajudá-lo a encontrar a fragrância perfeita.
               </p>
               <a
                 href="https://wa.me/5517996596204?text=Olá! Gostaria de agendar uma visita à Henri Perfumaria."
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 glass-primary text-primary-foreground font-body text-sm font-medium tracking-wider uppercase hover:bg-primary/90 transition-all duration-300 mx-auto"
+                className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 glass-primary text-primary-foreground font-body text-xs sm:text-sm font-medium tracking-wider uppercase hover:bg-primary/90 transition-all duration-300 mx-auto"
               >
                 Fale conosco no WhatsApp
               </a>

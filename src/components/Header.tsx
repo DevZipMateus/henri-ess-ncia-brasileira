@@ -30,19 +30,19 @@ const Header = () => {
           : "bg-black"
       }`}
     >
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+      <div className="container mx-auto px-3 sm:px-4">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-3">
             <img
               src="/logo.png"
               alt="Henri Perfumaria - Logo"
-              className="h-16 w-auto drop-shadow-sm"
+              className="h-12 sm:h-16 w-auto drop-shadow-sm"
             />
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -57,7 +57,7 @@ const Header = () => {
           {/* CTA Button Desktop */}
           <a
             href="https://wa.me/5517996596204"
-            className="hidden md:inline-flex items-center gap-2 px-6 py-2.5 bg-primary text-primary-foreground font-body text-sm font-medium rounded-sm hover:bg-primary/90 transition-all duration-300 shadow-elegant"
+            className="hidden lg:inline-flex items-center gap-2 px-4 xl:px-6 py-2 xl:py-2.5 bg-primary text-primary-foreground font-body text-xs xl:text-sm font-medium rounded-sm hover:bg-primary/90 transition-all duration-300 shadow-elegant"
           >
             Fale conosco
           </a>
@@ -65,10 +65,10 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-white"
+            className="lg:hidden p-2 text-white"
             aria-label="Menu"
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
 
@@ -78,15 +78,15 @@ const Header = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden pb-6 bg-background/95 backdrop-blur-md"
+            className="lg:hidden pb-6 bg-background/95 backdrop-blur-md"
           >
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-3 sm:gap-4">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="font-body text-base text-foreground/80 hover:text-primary transition-colors py-2 border-b border-border/50"
+                  className="font-body text-sm sm:text-base text-foreground/80 hover:text-primary transition-colors py-2 border-b border-border/50"
                 >
                   {item.label}
                 </a>
