@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Clock, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { Clock, Instagram, Phone, Star } from "lucide-react";
 import dubaiNight from "@/assets/dubai-night.jpg";
 
 const Contact = () => {
@@ -64,16 +64,16 @@ const Contact = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="space-y-8"
             >
-              {/* Address */}
+              {/* Atendimento Personalizado */}
               <div className="flex gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-primary" />
+                  <Star className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-display text-xl text-foreground mb-1">Endereço</h3>
+                  <h3 className="font-display text-xl text-foreground mb-1">Atendimento</h3>
                   <p className="font-body text-muted-foreground">
-                    R. Ida Verdi Amorim, 200<br />
-                    Vila Redentora, São José do Rio Preto - SP
+                    Atendimento personalizado<br />
+                    para mais exclusividade
                   </p>
                 </div>
               </div>
@@ -94,19 +94,17 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Email */}
+              {/* Hours */}
               <div className="flex gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-5 h-5 text-primary" />
+                  <Clock className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-display text-xl text-foreground mb-1">E-mail</h3>
-                  <a
-                    href="mailto:henri.imports11@gmail.com"
-                    className="font-body text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    henri.imports11@gmail.com
-                  </a>
+                  <h3 className="font-display text-xl text-foreground mb-1">Horário de funcionamento</h3>
+                  <p className="font-body text-muted-foreground">
+                    Segunda a Sábado: 09:00 às 20:00<br />
+                    Domingo: 11:00 às 17:00
+                  </p>
                 </div>
               </div>
 

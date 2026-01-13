@@ -1,20 +1,25 @@
-import { Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { Instagram, Phone, Star } from "lucide-react";
 import footerBg from "@/assets/footer-bg.jpg";
+
 const Footer = () => {
-  return <footer className="text-white/90 py-16 relative" style={{
-    backgroundColor: '#000000',
-    backgroundImage: `url(${footerBg})`,
-    backgroundRepeat: 'repeat-x',
-    backgroundPosition: 'bottom center',
-    backgroundSize: 'auto 120px'
-  }}>
+  return (
+    <footer
+      className="text-white/90 py-16 relative"
+      style={{
+        backgroundColor: '#000000',
+        backgroundImage: `url(${footerBg})`,
+        backgroundRepeat: 'repeat-x',
+        backgroundPosition: 'bottom center',
+        backgroundSize: 'auto 120px'
+      }}
+    >
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Logo & Description */}
           <div>
             <img src="/logo.png" alt="Henri Perfumaria" className="h-20 w-auto mb-4 brightness-0 invert opacity-90" />
             <p className="font-body text-sm text-white/60 leading-relaxed">
-              Onde a autenticidade encontra o luxo. Perfumes importados e árabes 100% originais em São José do Rio Preto.
+              Onde a autenticidade encontra o luxo. Perfumes importados e árabes 100% originais.
             </p>
           </div>
 
@@ -50,21 +55,15 @@ const Footer = () => {
             <h4 className="font-display text-lg text-white mb-4">Contato</h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                <Star className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                 <span className="font-body text-sm text-white/60">
-                  R. Ida Verdi Amorim, 200 - Vila Redentora, São José do Rio Preto - SP
+                  Atendimento personalizado para mais exclusividade
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
                 <a href="https://wa.me/5517996596204" className="font-body text-sm text-white/60 hover:text-white transition-colors">
                   (17) 99659-6204
-                </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                <a href="mailto:henri.imports11@gmail.com" className="font-body text-sm text-white/60 hover:text-white transition-colors">
-                  henri.imports11@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -76,10 +75,9 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
-        {/* Bottom Bar */}
-        
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
