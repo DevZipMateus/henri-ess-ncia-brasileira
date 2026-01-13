@@ -148,7 +148,7 @@ const Contact = () => {
               initial={{ opacity: 0, x: 30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="bg-card border-elegant rounded-sm p-8 md:p-10 shadow-elegant flex flex-col justify-center"
+              className="glass-card rounded-sm p-8 md:p-10 flex flex-col justify-center"
             >
               <h3 className="font-display text-2xl md:text-3xl text-foreground mb-4 text-center">
                 Agende sua visita
@@ -158,7 +158,7 @@ const Contact = () => {
               </p>
               <a
                 href="https://wa.me/5517996596204?text=Olá! Gostaria de agendar uma visita à Henri Perfumaria."
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-body text-sm font-medium tracking-wider uppercase hover:bg-primary/90 transition-all duration-300 shadow-elegant mx-auto"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 glass-primary text-primary-foreground font-body text-sm font-medium tracking-wider uppercase hover:bg-primary/90 transition-all duration-300 mx-auto"
               >
                 Fale conosco no WhatsApp
               </a>
