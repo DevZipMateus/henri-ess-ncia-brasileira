@@ -1,17 +1,19 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import perfumesArabes from "@/assets/perfumes-arabes.jpg";
+import perfumesOrientais from "@/assets/perfumes-orientais.png";
 
 const products = [
   {
     title: "Perfumes árabes",
     description: "Fragrâncias intensas e envolventes do Oriente Médio, com notas amadeiradas, almiscaradas e especiarias nobres.",
-    image: "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=800",
+    image: perfumesArabes,
   },
   {
     title: "Perfumes importados",
     description: "Seleção premium das melhores casas de perfumaria internacional, 100% originais com garantia de procedência.",
-    image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=800",
+    image: perfumesOrientais,
   },
   {
     title: "Linha home",
