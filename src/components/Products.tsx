@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { ExternalLink, ShoppingBag } from "lucide-react";
 import perfumesArabes from "@/assets/perfumes-arabes.jpg";
 import perfumesOrientais from "@/assets/perfumes-orientais.png";
 
@@ -80,6 +81,49 @@ const Products = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Vitrine Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="mt-16"
+        >
+          <a
+            href="/vitrine"
+            className="group relative block overflow-hidden rounded-sm glass-card hover:shadow-elegant transition-all duration-500"
+          >
+            <div className="relative p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
+              {/* Left Content */}
+              <div className="text-center md:text-left">
+                <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
+                  <ShoppingBag className="w-8 h-8 text-primary" />
+                  <h3 className="font-display text-3xl md:text-4xl text-foreground">
+                    Nossa Vitrine
+                  </h3>
+                </div>
+                <p className="font-body text-muted-foreground max-w-xl leading-relaxed mb-4">
+                  Explore nossa coleção completa de perfumes importados e árabes. 
+                  Navegue por todas as fragrâncias disponíveis e encontre a essência perfeita para você.
+                </p>
+                <div className="flex items-center justify-center md:justify-start gap-2 text-primary font-body font-medium">
+                  <span>Clique para explorar</span>
+                  <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+              
+              {/* Right - Visual Element */}
+              <div className="flex-shrink-0">
+                <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-primary/20 to-gold/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                  <ShoppingBag className="w-16 h-16 md:w-20 md:h-20 text-primary/80" />
+                </div>
+              </div>
+            </div>
+            
+            {/* Hover overlay effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          </a>
+        </motion.div>
 
         {/* CTA */}
         <motion.div
