@@ -46,7 +46,7 @@ const Vitrine = () => {
   return (
     <div className="fixed inset-0 w-full h-full overflow-hidden bg-background">
       {/* Header - 80px */}
-      <header className="fixed top-0 left-0 right-0 z-50 glass-dark shadow-elegant" style={{ height: `${HEADER_HEIGHT}px` }}>
+      <header className="fixed top-0 left-0 right-0 z-50 bg-black shadow-elegant" style={{ height: `${HEADER_HEIGHT}px` }}>
         <div className="container mx-auto px-4 h-full">
           <div className="flex items-center justify-between h-full">
             {/* Logo */}
