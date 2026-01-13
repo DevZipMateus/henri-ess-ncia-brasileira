@@ -46,11 +46,7 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className={`font-body text-sm font-medium transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 hover:after:w-full after:transition-all after:duration-300 ${
-                  isScrolled
-                    ? "text-foreground/80 hover:text-primary after:bg-primary"
-                    : "text-white/90 hover:text-white after:bg-white"
-                }`}
+                className="font-body text-sm font-medium transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 hover:after:w-full after:transition-all after:duration-300 text-white/90 hover:text-white after:bg-white"
               >
                 {item.label}
               </a>
@@ -68,7 +64,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden p-2 ${isScrolled ? "text-foreground" : "text-white"}`}
+            className="md:hidden p-2 text-white"
             aria-label="Menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
