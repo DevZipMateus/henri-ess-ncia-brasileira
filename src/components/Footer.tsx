@@ -1,5 +1,5 @@
 import { Instagram, Mail, MapPin, Phone } from "lucide-react";
-import footerBg from "@/assets/footer-bg.png";
+import footerBg from "@/assets/footer-bg.jpg";
 
 const Footer = () => {
   return (
@@ -10,26 +10,9 @@ const Footer = () => {
         backgroundImage: `url(${footerBg})`,
         backgroundRepeat: 'repeat-x',
         backgroundPosition: 'bottom center',
-        backgroundSize: 'auto 80px'
+        backgroundSize: 'auto 120px'
       }}
     >
-      {/* CSS filter to make the background image black */}
-      <style>{`
-        footer::before {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          height: 80px;
-          background-image: url(${footerBg});
-          background-repeat: repeat-x;
-          background-position: bottom center;
-          background-size: auto 80px;
-          filter: brightness(0);
-          pointer-events: none;
-        }
-      `}</style>
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Logo & Description */}
