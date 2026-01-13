@@ -31,13 +31,21 @@ const Vitrine = () => {
   // Prevent scrolling on page
   useEffect(() => {
     document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
+    document.body.style.height = "100%";
     return () => {
       document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+      document.body.style.height = "";
     };
   }, []);
 
   return (
-    <div className="h-screen w-full overflow-hidden bg-background">
+    <div className="fixed inset-0 w-full h-full overflow-hidden bg-background">
       {/* Header - 80px */}
       <header className="fixed top-0 left-0 right-0 z-50 glass-dark shadow-elegant" style={{ height: `${HEADER_HEIGHT}px` }}>
         <div className="container mx-auto px-4 h-full">
@@ -115,7 +123,7 @@ const Vitrine = () => {
 
       {/* Iframe - Remaining space */}
       <main 
-        className="w-full"
+        className="w-full overflow-hidden"
         style={{ 
           marginTop: `${HEADER_HEIGHT}px`,
           height: `${iframeHeight}px`
@@ -126,6 +134,7 @@ const Vitrine = () => {
           title="Demonstração de Vitrine"
           className="w-full h-full"
           style={{ border: "none" }}
+          scrolling="no"
         />
       </main>
     </div>
