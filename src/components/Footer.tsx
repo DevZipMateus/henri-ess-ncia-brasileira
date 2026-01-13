@@ -1,27 +1,18 @@
 import { Instagram, Mail, MapPin, Phone } from "lucide-react";
 import footerBg from "@/assets/footer-bg.jpg";
-
 const Footer = () => {
-  return (
-    <footer 
-      className="text-white/90 py-16 relative"
-      style={{
-        backgroundColor: '#000000',
-        backgroundImage: `url(${footerBg})`,
-        backgroundRepeat: 'repeat-x',
-        backgroundPosition: 'bottom center',
-        backgroundSize: 'auto 120px'
-      }}
-    >
+  return <footer className="text-white/90 py-16 relative" style={{
+    backgroundColor: '#000000',
+    backgroundImage: `url(${footerBg})`,
+    backgroundRepeat: 'repeat-x',
+    backgroundPosition: 'bottom center',
+    backgroundSize: 'auto 120px'
+  }}>
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Logo & Description */}
           <div>
-            <img
-              src="/logo.png"
-              alt="Henri Perfumaria"
-              className="h-20 w-auto mb-4 brightness-0 invert opacity-90"
-            />
+            <img src="/logo.png" alt="Henri Perfumaria" className="h-20 w-auto mb-4 brightness-0 invert opacity-90" />
             <p className="font-body text-sm text-white/60 leading-relaxed">
               Onde a autenticidade encontra o luxo. Perfumes importados e árabes 100% originais em São José do Rio Preto.
             </p>
@@ -78,12 +69,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Instagram className="w-4 h-4 text-primary flex-shrink-0" />
-                <a
-                  href="https://www.instagram.com/perfumaria.henri"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-body text-sm text-white/60 hover:text-white transition-colors"
-                >
+                <a href="https://www.instagram.com/perfumaria.henri" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-white/60 hover:text-white transition-colors">
                   @perfumaria.henri
                 </a>
               </li>
@@ -92,17 +78,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-8 text-center">
-          <p className="font-body text-xs text-white/40">
-            © {new Date().getFullYear()} Henri Perfumaria. Todos os direitos reservados.
-          </p>
-          <p className="font-body text-xs text-white/30 mt-2">
-            CNPJ: 64.257.026/0001-00
-          </p>
-        </div>
+        
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
