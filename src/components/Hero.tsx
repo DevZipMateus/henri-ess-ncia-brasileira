@@ -1,16 +1,20 @@
 import { motion } from "framer-motion";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center bg-hero-gradient pt-20 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
     >
-      {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
-      </div>
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      />
+      
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/70 via-charcoal/50 to-charcoal/80" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
@@ -24,7 +28,7 @@ const Hero = () => {
             <img
               src="/logo.png"
               alt="Henri Perfumaria"
-              className="w-48 md:w-64 lg:w-72 h-auto drop-shadow-md"
+              className="w-48 md:w-64 lg:w-72 h-auto drop-shadow-lg brightness-110"
             />
           </motion.div>
 
@@ -33,7 +37,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-display text-5xl md:text-7xl lg:text-8xl font-light text-foreground tracking-wide mb-6"
+            className="font-display text-5xl md:text-7xl lg:text-8xl font-light text-white tracking-wide mb-6 drop-shadow-lg"
           >
             Henri Perfumaria
           </motion.h1>
@@ -43,7 +47,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-display text-xl md:text-2xl lg:text-3xl font-light text-muted-foreground italic mb-4"
+            className="font-display text-xl md:text-2xl lg:text-3xl font-light text-white/90 italic mb-4"
           >
             Onde a autenticidade encontra o luxo
           </motion.h2>
@@ -52,7 +56,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="font-display text-lg md:text-xl text-primary/80 italic mb-12"
+            className="font-display text-lg md:text-xl text-gold italic mb-12"
           >
             E a elegância se transforma em essência.
           </motion.p>
@@ -62,7 +66,7 @@ const Hero = () => {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="w-24 h-px bg-gradient-to-r from-transparent via-primary to-transparent mb-12"
+            className="w-24 h-px bg-gradient-to-r from-transparent via-gold to-transparent mb-12"
           />
 
           {/* CTA Buttons */}
@@ -80,7 +84,7 @@ const Hero = () => {
             </a>
             <a
               href="https://wa.me/5517996596204"
-              className="px-8 py-3 border border-primary/30 text-foreground font-body text-sm font-medium tracking-wider uppercase hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
+              className="px-8 py-3 border border-white/40 text-white font-body text-sm font-medium tracking-wider uppercase hover:bg-white/10 hover:border-white/60 transition-all duration-300 backdrop-blur-sm"
             >
               Fale conosco
             </a>
