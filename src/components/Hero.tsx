@@ -28,7 +28,7 @@ const Hero = () => {
             <img
               src="/logo.png"
               alt="Henri Perfumaria"
-              className="w-48 md:w-64 lg:w-72 h-auto drop-shadow-lg brightness-110"
+              className="w-64 md:w-80 lg:w-96 h-auto drop-shadow-lg brightness-110"
             />
           </motion.div>
 
