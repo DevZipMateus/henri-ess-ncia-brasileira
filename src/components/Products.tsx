@@ -133,10 +133,10 @@ const Products = () => {
           className="text-center mt-12"
         >
           <a
-            href="https://wa.me/5517996596204?text=Olá! Gostaria de conhecer os produtos da Henri Perfumaria."
+            href="/vitrine"
             className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground font-body text-sm font-medium tracking-wider uppercase hover:bg-primary/90 transition-all duration-300 shadow-elegant"
           >
-            Solicite nosso catálogo
+            Ver vitrine
           </a>
         </motion.div>
       </div>
