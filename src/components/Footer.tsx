@@ -1,8 +1,17 @@
 import { Instagram, Mail, MapPin, Phone } from "lucide-react";
+import footerBg from "@/assets/footer-bg.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-charcoal text-white/90 py-16">
+    <footer 
+      className="bg-charcoal text-white/90 py-16 relative"
+      style={{
+        backgroundImage: `url(${footerBg})`,
+        backgroundRepeat: 'repeat-x',
+        backgroundPosition: 'bottom center',
+        backgroundSize: 'auto 80px'
+      }}
+    >
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Logo & Description */}
