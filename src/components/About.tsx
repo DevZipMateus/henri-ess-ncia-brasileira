@@ -7,22 +7,22 @@ import mesquitaSunset from "@/assets/mesquita-sunset.jpg";
 const values = [
   {
     icon: Shield,
-    title: "Autenticidade absoluta",
+    title: "Autenticidade Absoluta",
     description: "Compromisso inegociável com a originalidade e procedência de cada fragrância.",
   },
   {
     icon: Star,
-    title: "Excelência em experiência",
+    title: "Excelência Em Experiência",
     description: "O cliente no centro de tudo, com atendimento exclusivo e atenção aos detalhes.",
   },
   {
     icon: Gem,
-    title: "Curadoria premium",
+    title: "Curadoria Premium",
     description: "Seleção criteriosa das fragrâncias mais nobres e desejadas do mercado internacional.",
   },
   {
     icon: Heart,
-    title: "Paixão pela alta perfumaria",
+    title: "Paixão Pela Alta Perfumaria",
     description: "Conhecimento, sensibilidade e dedicação em cada escolha.",
   },
 ];
@@ -60,7 +60,7 @@ const About = () => {
             className="text-center"
           >
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 sm:mb-6 drop-shadow-lg">
-              Nossa história
+              Nossa História
             </h2>
             <div className="w-16 sm:w-24 h-1 bg-divider mx-auto rounded-full" />
           </motion.div>
@@ -98,7 +98,7 @@ const About = () => {
             className="glass-card rounded-sm p-6 sm:p-8 md:p-12 mb-12 sm:mb-16 max-w-4xl mx-auto border-l-4 border-divider"
           >
             <h3 className="font-display text-xl sm:text-2xl md:text-3xl text-foreground mb-3 sm:mb-4 text-center">
-              Nossa missão
+              Nossa Missão
             </h3>
             <p className="font-body text-muted-foreground text-sm sm:text-base text-center leading-relaxed">
               Proporcionar uma experiência olfativa exclusiva e memorável, por meio de perfumes importados e árabes 100% originais, cuidadosamente selecionados para atender aos mais altos padrões de qualidade, autenticidade e sofisticação.
@@ -113,7 +113,7 @@ const About = () => {
             className="text-center mb-8 sm:mb-12"
           >
             <h3 className="font-display text-2xl sm:text-3xl md:text-4xl font-light text-foreground mb-4 sm:mb-6">
-              Nossos valores
+              Nossos Valores
             </h3>
             <div className="w-12 sm:w-16 h-1 bg-divider mx-auto rounded-full" />
           </motion.div>

@@ -135,7 +135,7 @@ const Contact = () => {
               className="glass-card rounded-sm p-6 sm:p-8 md:p-10 flex flex-col justify-center border-l-4 border-divider"
             >
               <h3 className="font-display text-xl sm:text-2xl md:text-3xl text-foreground mb-3 sm:mb-4 text-center">
-                Agende sua visita
+                Agende Sua Visita
               </h3>
               <p className="font-body text-muted-foreground text-center mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
                 Venha conhecer nossa curadoria exclusiva de perfumes importados e árabes. Oferecemos um atendimento personalizado para ajudá-lo a encontrar a fragrância perfeita.
