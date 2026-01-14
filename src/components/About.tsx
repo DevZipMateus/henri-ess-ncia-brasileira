@@ -95,7 +95,7 @@ const About = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="glass-card rounded-sm p-6 sm:p-8 md:p-12 mb-12 sm:mb-16 max-w-4xl mx-auto"
+            className="glass-card rounded-sm p-6 sm:p-8 md:p-12 mb-12 sm:mb-16 max-w-4xl mx-auto border-l-4 border-divider"
           >
             <h3 className="font-display text-xl sm:text-2xl md:text-3xl text-foreground mb-3 sm:mb-4 text-center">
               Nossa missão
@@ -125,7 +125,7 @@ const About = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
-                className="glass-card rounded-sm p-5 sm:p-6 text-center hover:shadow-elegant transition-all duration-300 group"
+                className="glass-card rounded-sm p-5 sm:p-6 text-center hover:shadow-elegant transition-all duration-300 group border-t-4 border-divider"
               >
                 <div className="w-12 h-12 sm:w-14 sm:h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:bg-primary/20 transition-colors">
                   <value.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />

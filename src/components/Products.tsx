@@ -71,7 +71,7 @@ const Products = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group relative overflow-hidden rounded-sm border-gold hover-glow transition-all duration-500"
+              className="group relative overflow-hidden rounded-sm border-2 border-divider hover-glow transition-all duration-500"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
@@ -104,7 +104,7 @@ const Products = () => {
         >
           <a
             href="/vitrine"
-            className="group relative block overflow-hidden rounded-sm glass-card border-gold hover-glow transition-all duration-500"
+            className="group relative block overflow-hidden rounded-sm glass-card border-2 border-divider hover-glow transition-all duration-500"
           >
             {/* Shimmer effect */}
             <div className="absolute inset-0 shimmer" />
