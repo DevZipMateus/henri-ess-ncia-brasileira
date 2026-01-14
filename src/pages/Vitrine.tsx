@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import PageTransition from "@/components/PageTransition";
-import henriCoLogo from "@/assets/henri-co-logo.png";
+import headerLogos from "@/assets/header-logos-combined.png";
 
 const navItems = [
   { label: "Início", href: "/" },
@@ -57,17 +57,11 @@ const Vitrine = () => {
           <div className="container mx-auto px-3 sm:px-4">
             <div className="flex items-center justify-between h-24">
               {/* Logos */}
-              <Link to="/" className="flex items-center gap-2 sm:gap-3 md:gap-4">
+              <Link to="/" className="flex items-center">
                 <img
-                  src="/logo-dark.png"
-                  alt="Henri Perfumaria - Logo"
+                  src={headerLogos}
+                  alt="Henri Perfumaria & Henri.Co - Logos"
                   className="h-20 w-auto drop-shadow-sm"
-                />
-                <div className="w-px h-10 bg-foreground/20" />
-                <img
-                  src={henriCoLogo}
-                  alt="Henri.Co - Logo"
-                  className="h-24 w-auto drop-shadow-sm"
                 />
               </Link>
 
