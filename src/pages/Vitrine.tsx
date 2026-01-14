@@ -51,7 +51,7 @@ const Vitrine = () => {
 
   return (
     <PageTransition>
-      <div className="fixed inset-0 w-full h-full overflow-hidden bg-background">
+      <div className="fixed inset-0 w-full h-full overflow-hidden" style={{ backgroundColor: '#fcd1c6' }}>
         {/* Header */}
         <header className="fixed top-0 left-0 right-0 z-50 bg-background shadow-elegant h-16 sm:h-20">
           <div className="container mx-auto px-3 sm:px-4 h-full">
