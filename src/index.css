@@ -6,97 +6,97 @@
   :root {
     /* Cores principais - Tema claro com Pantone 420 Grey */
     --background: 0 0% 80%;
-    --foreground: 0 0% 95%;
+    --foreground: 0 0% 10%;
 
     /* Cards e superfícies - Cinza Pantone 420 base */
-    --card: 0 0% 10%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 90%;
+    --card-foreground: 0 0% 10%;
 
-    --popover: 0 0% 12%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 92%;
+    --popover-foreground: 0 0% 10%;
 
     /* Terracota - Cor primária */
     --primary: 14 55% 48%;
     --primary-foreground: 0 0% 98%;
 
     /* Cinza Pantone 420 - Secundário */
-    --secondary: 0 0% 52%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 0 0% 70%;
+    --secondary-foreground: 0 0% 10%;
 
     /* Muted - Cinza neutro */
-    --muted: 0 0% 14%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 0 0% 75%;
+    --muted-foreground: 0 0% 35%;
 
     /* Accent - Laranja sutil */
     --accent: 24 85% 55%;
     --accent-foreground: 0 0% 6%;
 
     /* Destructive */
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 0 0% 95%;
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 98%;
 
     /* Bordas e inputs - Cinza Pantone 420 */
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
+    --border: 0 0% 65%;
+    --input: 0 0% 65%;
     --ring: 14 55% 48%;
 
     --radius: 0.5rem;
 
     /* Cores extras para design */
-    --cream: 0 0% 10%;
+    --cream: 0 0% 85%;
     --gold: 24 85% 55%;
     --terracotta-light: 14 45% 58%;
     --terracotta-dark: 14 55% 38%;
-    --charcoal: 0 0% 4%;
+    --charcoal: 0 0% 20%;
     --grey-420: 0 0% 52%;
 
     /* Sidebar */
-    --sidebar-background: 0 0% 8%;
-    --sidebar-foreground: 0 0% 90%;
+    --sidebar-background: 0 0% 85%;
+    --sidebar-foreground: 0 0% 15%;
     --sidebar-primary: 14 55% 48%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 0 0% 14%;
-    --sidebar-accent-foreground: 0 0% 90%;
-    --sidebar-border: 0 0% 18%;
+    --sidebar-accent: 0 0% 75%;
+    --sidebar-accent-foreground: 0 0% 15%;
+    --sidebar-border: 0 0% 65%;
     --sidebar-ring: 14 55% 48%;
   }
 
   .dark {
     --background: 0 0% 80%;
-    --foreground: 0 0% 95%;
+    --foreground: 0 0% 10%;
 
-    --card: 0 0% 10%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 90%;
+    --card-foreground: 0 0% 10%;
 
-    --popover: 0 0% 12%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 92%;
+    --popover-foreground: 0 0% 10%;
 
     --primary: 14 55% 48%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 0 0% 52%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 0 0% 70%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 0 0% 14%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 0 0% 75%;
+    --muted-foreground: 0 0% 35%;
 
     --accent: 24 85% 55%;
     --accent-foreground: 0 0% 6%;
 
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 0 0% 95%;
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
+    --border: 0 0% 65%;
+    --input: 0 0% 65%;
     --ring: 14 55% 48%;
 
-    --sidebar-background: 0 0% 8%;
-    --sidebar-foreground: 0 0% 90%;
+    --sidebar-background: 0 0% 85%;
+    --sidebar-foreground: 0 0% 15%;
     --sidebar-primary: 14 55% 48%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 0 0% 14%;
-    --sidebar-accent-foreground: 0 0% 90%;
-    --sidebar-border: 0 0% 18%;
+    --sidebar-accent: 0 0% 75%;
+    --sidebar-accent-foreground: 0 0% 15%;
+    --sidebar-border: 0 0% 65%;
     --sidebar-ring: 14 55% 48%;
   }
 }
