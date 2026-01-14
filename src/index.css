@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    /* Cores principais - Tema escuro com Pantone 420 Grey */
-    --background: 0 0% 6%;
+    /* Cores principais - Tema claro com Pantone 420 Grey */
+    --background: 0 0% 80%;
     --foreground: 0 0% 95%;
 
     /* Cards e superfícies - Cinza Pantone 420 base */
@@ -62,7 +62,7 @@
   }
 
   .dark {
-    --background: 0 0% 6%;
+    --background: 0 0% 80%;
     --foreground: 0 0% 95%;
 
     --card: 0 0% 10%;
