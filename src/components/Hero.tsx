@@ -90,7 +90,7 @@ const Hero = () => {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="w-24 sm:w-32 h-0.5 gradient-gold mb-8 sm:mb-12 glow-gold"
+            className="w-24 sm:w-32 h-1 bg-divider mb-8 sm:mb-12 rounded-full"
           />
 
           {/* CTA Buttons */}

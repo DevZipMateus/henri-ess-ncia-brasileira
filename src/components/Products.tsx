@@ -56,7 +56,7 @@ const Products = () => {
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-4 sm:mb-6 text-glow">
             Nossos produtos
           </h2>
-          <div className="w-16 sm:w-24 h-px gradient-gold mx-auto mb-6 sm:mb-8" />
+          <div className="w-16 sm:w-24 h-1 bg-divider mx-auto mb-6 sm:mb-8 rounded-full" />
           <p className="font-body text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base md:text-lg px-2">
             Descubra nossa curadoria exclusiva de fragrâncias e produtos selecionados das melhores casas internacionais e do Oriente Médio.
           </p>

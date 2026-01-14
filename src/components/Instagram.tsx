@@ -60,9 +60,9 @@ const InstagramSection = () => {
 
           {/* Decorative line */}
           <div className="mt-10 sm:mt-12 flex items-center justify-center gap-4">
-            <div className="w-12 sm:w-20 h-px bg-gradient-to-r from-transparent to-primary/40" />
-            <div className="w-1.5 h-1.5 rounded-full bg-primary/60" />
-            <div className="w-12 sm:w-20 h-px bg-gradient-to-l from-transparent to-primary/40" />
+            <div className="w-12 sm:w-20 h-1 bg-divider rounded-full" />
+            <div className="w-2 h-2 rounded-full bg-divider" />
+            <div className="w-12 sm:w-20 h-1 bg-divider rounded-full" />
           </div>
         </motion.div>
       </div>
