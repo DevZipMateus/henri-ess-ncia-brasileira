@@ -10,8 +10,8 @@ import henriCo from "@/assets/henri-co.jpg";
 
 const products = [
   {
-    title: "Perfumes Árabes",
-    description: "Fragrâncias intensas e envolventes do Oriente Médio, com notas amadeiradas, almiscaradas e especiarias nobres.",
+    title: "Perfumaria Árabe",
+    description: "Fragrâncias intensas e envolventes do Oriente Médio, com notas amadeiradas, almiscaradas e especiarias nobres. Com fragrâncias autorais, Inspirações Olfativas e Contratipos Diretos e Fidedignos.",
     image: perfumesArabes,
   },
   {
