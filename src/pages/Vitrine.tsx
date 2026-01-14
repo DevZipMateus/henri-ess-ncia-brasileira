@@ -61,13 +61,13 @@ const Vitrine = () => {
                 <img
                   src="/logo-dark.png"
                   alt="Henri Perfumaria - Logo"
-                  className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto drop-shadow-sm"
+                  className="h-8 w-auto drop-shadow-sm"
                 />
-                <div className="w-px h-5 sm:h-6 md:h-8 bg-foreground/20" />
+                <div className="w-px h-5 bg-foreground/20" />
                 <img
                   src={henriCoLogo}
                   alt="Henri.Co - Logo"
-                  className="h-6 sm:h-8 md:h-10 lg:h-12 w-auto drop-shadow-sm"
+                  className="h-6 w-auto drop-shadow-sm"
                 />
               </Link>
 
