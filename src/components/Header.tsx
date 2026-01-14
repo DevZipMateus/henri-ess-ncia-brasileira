@@ -33,9 +33,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-24">
           {/* Logos */}
           <a href="#inicio" className="flex items-center gap-2 sm:gap-3 md:gap-4">
-            <img src="/logo-dark.png" alt="Henri Perfumaria - Logo" className="h-20 w-auto drop-shadow-sm" />
-            <div className="w-px h-10 bg-foreground/20" />
-            <img src={henriCoLogo} alt="Henri.Co - Logo" className="h-24 w-auto drop-shadow-sm" />
+            <img src="/logo-dark.png" alt="Henri Perfumaria - Logo" className="h-14 w-auto drop-shadow-sm" />
+            <div className="w-px h-8 bg-foreground/20 self-center" />
+            <img src={henriCoLogo} alt="Henri.Co - Logo" className="h-16 w-auto drop-shadow-sm" />
           </a>
 
           {/* Desktop Navigation */}
