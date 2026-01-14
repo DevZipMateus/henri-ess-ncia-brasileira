@@ -55,15 +55,8 @@ const Hero = () => {
             />
           </motion.div>
 
-          {/* H1 - Nome da empresa */}
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-display text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-light text-white tracking-wide mb-4 sm:mb-6 drop-shadow-lg text-glow"
-          >
-            Henri Perfumaria
-          </motion.h1>
+          {/* H1 - Nome da empresa (sr-only para SEO) */}
+          <h1 className="sr-only">Henri Perfumaria</h1>
 
           {/* H2 - Slogan */}
           <motion.h2
