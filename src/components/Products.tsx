@@ -65,13 +65,14 @@ const Products = () => {
         {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           {products.map((product, index) => (
-            <motion.div
+            <motion.a
+              href="/vitrine"
               key={product.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group relative overflow-hidden rounded-sm border-2 border-divider hover-glow transition-all duration-500"
+              className="group relative overflow-hidden rounded-sm border-2 border-divider hover-glow transition-all duration-500 cursor-pointer"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
@@ -91,7 +92,7 @@ const Products = () => {
                   {product.description}
                 </p>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
 
