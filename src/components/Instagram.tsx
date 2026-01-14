@@ -33,7 +33,7 @@ const InstagramSection = () => {
 
           {/* Title */}
           <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl text-foreground mb-3 sm:mb-4">
-            Siga-nos no <span className="text-primary">Instagram</span>
+            Siga-nos No <span className="text-primary">Instagram</span>
           </h2>
 
           {/* Description */}

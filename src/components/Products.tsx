@@ -10,17 +10,17 @@ import henriCo from "@/assets/henri-co.jpg";
 
 const products = [
   {
-    title: "Perfumes árabes",
+    title: "Perfumes Árabes",
     description: "Fragrâncias intensas e envolventes do Oriente Médio, com notas amadeiradas, almiscaradas e especiarias nobres.",
     image: perfumesArabes,
   },
   {
-    title: "Perfumes importados",
+    title: "Perfumes Importados",
     description: "Seleção premium das melhores casas de perfumaria internacional, 100% originais com garantia de procedência.",
     image: perfumesOrientais,
   },
   {
-    title: "Linha home",
+    title: "Linha Home",
     description: "Aromatizadores e difusores para transformar seu ambiente em uma experiência sensorial única.",
     image: linhaHome,
   },
@@ -55,7 +55,7 @@ const Products = () => {
             <Sparkles className="w-4 h-4 sm:w-6 sm:h-6 text-gold" />
           </div>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-4 sm:mb-6 text-glow">
-            Nossos produtos
+            Nossos Produtos
           </h2>
           <div className="w-16 sm:w-24 h-1 bg-divider mx-auto mb-6 sm:mb-8 rounded-full" />
           <p className="font-body text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base md:text-lg px-2">
