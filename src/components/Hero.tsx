@@ -52,7 +52,7 @@ const Hero = () => {
             <img
               src={heroLogo}
               alt="Henri Perfumaria - Logo com frasco de perfume em moldura árabe"
-              className="w-56 sm:w-80 md:w-96 lg:w-[28rem] h-auto drop-shadow-lg invert"
+              className="w-56 sm:w-80 md:w-96 lg:w-[28rem] h-auto drop-shadow-lg"
             />
           </motion.div>
 
