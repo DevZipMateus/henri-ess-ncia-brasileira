@@ -64,7 +64,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-display text-base sm:text-xl md:text-2xl lg:text-3xl font-light text-white/90 italic mb-3 sm:mb-4 px-2"
+            className="font-display text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-white/90 italic mb-3 sm:mb-4 px-2"
           >
             Onde a autenticidade encontra o luxo
           </motion.h2>
