@@ -73,7 +73,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="font-display text-sm sm:text-lg md:text-xl text-gold italic mb-8 sm:mb-12 flex items-center gap-2 px-2"
+            className="font-display text-base sm:text-xl md:text-2xl lg:text-3xl text-gold italic mb-8 sm:mb-12 flex items-center gap-2 px-2 font-bold"
           >
             <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
             <span>E a elegância se transforma em essência.</span>
