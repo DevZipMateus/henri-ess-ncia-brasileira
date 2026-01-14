@@ -21,7 +21,7 @@ const products = [
   },
   {
     title: "Linha Home",
-    description: "Aromatizadores e difusores para transformar seu ambiente em uma experiência sensorial única.",
+    description: "Velas Aromáticas, Difusores de Ambiente, Sabonete Líquido, Aromatizadores de Ambiente, entre outros itens para transformar seu ambiente em uma experiência sensorial única.",
     image: linhaHome,
   },
   {
