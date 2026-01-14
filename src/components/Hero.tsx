@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
+import heroLogo from "@/assets/logo-henri-preto.png";
 
 const Hero = () => {
   const ref = useRef(null);
@@ -49,9 +50,9 @@ const Hero = () => {
             className="mb-6 sm:mb-10 float"
           >
             <img
-              src="/logo.png"
-              alt="Henri Perfumaria"
-              className="w-40 sm:w-64 md:w-80 lg:w-96 h-auto drop-shadow-lg brightness-110"
+              src={heroLogo}
+              alt="Henri Perfumaria - Logo com frasco de perfume em moldura árabe"
+              className="w-56 sm:w-80 md:w-96 lg:w-[28rem] h-auto drop-shadow-lg invert"
             />
           </motion.div>
 
