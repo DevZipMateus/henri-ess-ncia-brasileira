@@ -30,12 +30,12 @@ const Header = () => {
   }, []);
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background shadow-elegant" : "bg-background"}`}>
       <div className="container mx-auto px-3 sm:px-4">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logos */}
           <a href="#inicio" className="flex items-center gap-2 sm:gap-3 md:gap-4">
-            <img src="/logo-dark.png" alt="Henri Perfumaria - Logo" className="h-5 sm:h-10 md:h-12 lg:h-14 w-auto drop-shadow-sm" />
-            <div className="w-px h-5 sm:h-6 md:h-8 bg-foreground/20" />
-            <img src={henriCoLogo} alt="Henri.Co - Logo" className="h-6 sm:h-8 md:h-10 lg:h-12 w-auto drop-shadow-sm" />
+            <img src="/logo-dark.png" alt="Henri Perfumaria - Logo" className="h-20 w-auto drop-shadow-sm" />
+            <div className="w-px h-10 bg-foreground/20" />
+            <img src={henriCoLogo} alt="Henri.Co - Logo" className="h-24 w-auto drop-shadow-sm" />
           </a>
 
           {/* Desktop Navigation */}
