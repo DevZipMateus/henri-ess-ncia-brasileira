@@ -13,7 +13,7 @@ const navItems = [
   { label: "Vitrine", href: "/vitrine" },
 ];
 
-const getHeaderHeight = () => window.innerWidth < 640 ? 64 : 80;
+const getHeaderHeight = () => 96;
 
 const Vitrine = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -53,21 +53,21 @@ const Vitrine = () => {
     <PageTransition>
       <div className="fixed inset-0 w-full h-full overflow-hidden" style={{ backgroundColor: '#fcd1c6' }}>
         {/* Header */}
-        <header className="fixed top-0 left-0 right-0 z-50 bg-background shadow-elegant h-16 sm:h-20">
-          <div className="container mx-auto px-3 sm:px-4 h-full">
-            <div className="flex items-center justify-between h-full">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-background shadow-elegant">
+          <div className="container mx-auto px-3 sm:px-4">
+            <div className="flex items-center justify-between h-24">
               {/* Logos */}
               <Link to="/" className="flex items-center gap-2 sm:gap-3 md:gap-4">
                 <img
                   src="/logo-dark.png"
                   alt="Henri Perfumaria - Logo"
-                  className="h-8 w-auto drop-shadow-sm"
+                  className="h-20 w-auto drop-shadow-sm"
                 />
-                <div className="w-px h-5 bg-foreground/20" />
+                <div className="w-px h-10 bg-foreground/20" />
                 <img
                   src={henriCoLogo}
                   alt="Henri.Co - Logo"
-                  className="h-6 w-auto drop-shadow-sm"
+                  className="h-24 w-auto drop-shadow-sm"
                 />
               </Link>
 
