@@ -3,7 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ExternalLink, ShoppingBag, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
-import perfumesArabes from "@/assets/perfumes-arabes.jpg";
+import perfumariaArabe from "@/assets/perfumaria-arabe.png";
 import perfumariaInternacional from "@/assets/perfumaria-internacional.jpeg";
 import linhaHome from "@/assets/linha-home.jpg";
 import henriCo from "@/assets/henri-co.jpg";
@@ -12,7 +12,7 @@ const products = [
   {
     title: "Perfumaria Árabe",
     description: "Fragrâncias intensas e envolventes do Oriente Médio, com notas amadeiradas, almiscaradas e especiarias nobres. Com fragrâncias autorais, Inspirações Olfativas e Contratipos Diretos e Fidedignos.",
-    image: perfumesArabes,
+    image: perfumariaArabe,
   },
   {
     title: "Perfumaria Internacional Importada",
