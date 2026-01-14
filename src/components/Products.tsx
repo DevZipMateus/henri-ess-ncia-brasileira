@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ExternalLink, ShoppingBag, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import perfumesArabes from "@/assets/perfumes-arabes.jpg";
 import perfumesOrientais from "@/assets/perfumes-orientais.png";
 import linhaHome from "@/assets/linha-home.jpg";
@@ -65,34 +66,37 @@ const Products = () => {
         {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           {products.map((product, index) => (
-            <motion.a
-              href="/vitrine"
+            <motion.div
               key={product.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group relative overflow-hidden rounded-sm border-2 border-divider hover-glow transition-all duration-500 cursor-pointer"
             >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src={product.image}
-                  alt={product.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
-              </div>
-              
-              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8">
-                <h3 className="font-display text-xl sm:text-2xl md:text-3xl text-white mb-1 sm:mb-2 group-hover:text-gold transition-colors duration-300">
-                  {product.title}
-                </h3>
-                <p className="font-body text-xs sm:text-sm text-white/80 leading-relaxed line-clamp-2 sm:line-clamp-none">
-                  {product.description}
-                </p>
-              </div>
-            </motion.a>
+              <Link
+                to="/vitrine"
+                className="group relative overflow-hidden rounded-sm border-2 border-divider hover-glow transition-all duration-500 cursor-pointer block"
+              >
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+                </div>
+                
+                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8">
+                  <h3 className="font-display text-xl sm:text-2xl md:text-3xl text-white mb-1 sm:mb-2 group-hover:text-gold transition-colors duration-300">
+                    {product.title}
+                  </h3>
+                  <p className="font-body text-xs sm:text-sm text-white/80 leading-relaxed line-clamp-2 sm:line-clamp-none">
+                    {product.description}
+                  </p>
+                </div>
+              </Link>
+            </motion.div>
           ))}
         </div>
 
@@ -103,8 +107,8 @@ const Products = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-10 sm:mt-16"
         >
-          <a
-            href="/vitrine"
+          <Link
+            to="/vitrine"
             className="group relative block overflow-hidden rounded-sm glass-card border-2 border-divider hover-glow transition-all duration-500"
           >
             {/* Shimmer effect */}
@@ -137,7 +141,7 @@ const Products = () => {
                 </div>
               </div>
             </div>
-          </a>
+          </Link>
         </motion.div>
 
         {/* CTA */}
@@ -147,14 +151,14 @@ const Products = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-center mt-8 sm:mt-12"
         >
-          <a
-            href="/vitrine"
+          <Link
+            to="/vitrine"
             className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-10 py-3 sm:py-4 gradient-gold text-black font-body text-xs sm:text-sm font-semibold tracking-wider uppercase hover:scale-105 transition-all duration-300 glow-gold rounded-sm"
           >
             <Sparkles className="w-4 h-4 sm:w-5 sm:h-5" />
             Ver vitrine
             <Sparkles className="w-4 h-4 sm:w-5 sm:h-5" />
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

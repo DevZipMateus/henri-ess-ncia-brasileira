@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -100,14 +101,14 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto px-2 sm:px-0"
           >
-            <a
-              href="/vitrine"
+            <Link
+              to="/vitrine"
               className="group px-6 sm:px-8 py-3 gradient-gold text-black font-body text-xs sm:text-sm font-semibold tracking-wider uppercase transition-all duration-300 glow-gold hover:scale-105 flex items-center justify-center gap-2"
             >
               <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 group-hover:rotate-12 transition-transform" />
               Ver nossa vitrine
               <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 group-hover:-rotate-12 transition-transform" />
-            </a>
+            </Link>
             <a
               href="#produtos"
               className="px-6 sm:px-8 py-3 border border-white/40 text-white font-body text-xs sm:text-sm font-medium tracking-wider uppercase hover:bg-white/10 hover:border-white/60 transition-all duration-300 backdrop-blur-sm hover:scale-105 text-center"
