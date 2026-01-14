@@ -62,7 +62,7 @@ const About = () => {
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 sm:mb-6 drop-shadow-lg">
               Nossa história
             </h2>
-            <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-gold to-transparent mx-auto" />
+            <div className="w-16 sm:w-24 h-1 bg-divider mx-auto rounded-full" />
           </motion.div>
         </div>
       </div>
@@ -115,7 +115,7 @@ const About = () => {
             <h3 className="font-display text-2xl sm:text-3xl md:text-4xl font-light text-foreground mb-4 sm:mb-6">
               Nossos valores
             </h3>
-            <div className="w-12 sm:w-16 h-px bg-primary mx-auto" />
+            <div className="w-12 sm:w-16 h-1 bg-divider mx-auto rounded-full" />
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">

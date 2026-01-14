@@ -55,6 +55,7 @@ export default {
           dark: "hsl(var(--terracotta-dark))",
         },
         charcoal: "hsl(var(--charcoal))",
+        divider: "hsl(var(--divider))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

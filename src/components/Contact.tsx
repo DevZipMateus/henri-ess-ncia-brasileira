@@ -39,7 +39,7 @@ const Contact = () => {
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-light text-white mb-3 sm:mb-4 drop-shadow-lg">
               Contato
             </h2>
-            <div className="w-12 sm:w-16 h-px bg-gradient-to-r from-transparent via-gold to-transparent mx-auto" />
+            <div className="w-12 sm:w-16 h-1 bg-divider mx-auto rounded-full" />
           </motion.div>
         </div>
       </div>
