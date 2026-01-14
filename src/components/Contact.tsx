@@ -53,7 +53,7 @@ const Contact = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="font-body text-muted-foreground max-w-2xl mx-auto text-center mb-10 sm:mb-16 text-sm sm:text-base"
           >
-            Visite nossa loja ou entre em contato para uma experiência olfativa única e personalizada.
+            Entre em contato conosco e agende sua visita para uma experiência olfativa exclusiva, com atendimento personalizado e individualizado.
           </motion.p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 max-w-5xl mx-auto">
