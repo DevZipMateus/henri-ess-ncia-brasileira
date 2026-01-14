@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
-import heroLogo from "@/assets/logo-henri-preto.png";
+import heroLogo from "@/assets/hero-logo-white.png";
 
 const Hero = () => {
   const ref = useRef(null);
