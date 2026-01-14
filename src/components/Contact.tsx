@@ -132,7 +132,7 @@ const Contact = () => {
               initial={{ opacity: 0, x: 30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="glass-card rounded-sm p-6 sm:p-8 md:p-10 flex flex-col justify-center"
+              className="glass-card rounded-sm p-6 sm:p-8 md:p-10 flex flex-col justify-center border-l-4 border-divider"
             >
               <h3 className="font-display text-xl sm:text-2xl md:text-3xl text-foreground mb-3 sm:mb-4 text-center">
                 Agende sua visita

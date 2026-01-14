@@ -50,7 +50,7 @@ const InstagramSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="inline-flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/40 rounded-full hover:border-primary hover:shadow-[0_0_25px_rgba(212,175,55,0.3)] transition-all duration-500 group"
+            className="inline-flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-primary/10 to-primary/5 border-2 border-divider rounded-full hover:shadow-[0_0_25px_rgba(221,81,55,0.3)] transition-all duration-500 group"
           >
             <InstagramIcon className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
             <span className="font-display text-base sm:text-lg text-foreground group-hover:text-primary transition-colors duration-300">
