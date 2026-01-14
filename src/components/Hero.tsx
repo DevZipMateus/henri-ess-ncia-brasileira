@@ -110,14 +110,8 @@ const Hero = () => {
               <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 group-hover:-rotate-12 transition-transform" />
             </Link>
             <a
-              href="#produtos"
-              className="px-6 sm:px-8 py-3 border border-white/40 text-white font-body text-xs sm:text-sm font-medium tracking-wider uppercase hover:bg-white/10 hover:border-white/60 transition-all duration-300 backdrop-blur-sm hover:scale-105 text-center"
-            >
-              Conheça nossos produtos
-            </a>
-            <a
               href="https://wa.me/5517996596204"
-              className="px-6 sm:px-8 py-3 border border-gold/60 text-gold font-body text-xs sm:text-sm font-medium tracking-wider uppercase hover:bg-gold/10 hover:border-gold transition-all duration-300 backdrop-blur-sm hover:scale-105 text-center"
+              className="px-6 sm:px-8 py-3 bg-charcoal/80 backdrop-blur-sm border border-gold/60 text-gold font-body text-xs sm:text-sm font-medium tracking-wider uppercase hover:bg-charcoal hover:border-gold transition-all duration-300 hover:scale-105 text-center"
             >
               Fale conosco
             </a>
