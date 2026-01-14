@@ -26,8 +26,8 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-black shadow-elegant"
-          : "bg-black"
+          ? "bg-background shadow-elegant"
+          : "bg-background"
       }`}
     >
       <div className="container mx-auto px-3 sm:px-4">
@@ -35,7 +35,7 @@ const Header = () => {
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-3">
             <img
-              src="/logo.png"
+              src="/logo-dark.png"
               alt="Henri Perfumaria - Logo"
               className="h-12 sm:h-16 w-auto drop-shadow-sm"
             />
@@ -47,7 +47,7 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="font-body text-sm font-medium transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 hover:after:w-full after:transition-all after:duration-300 text-white/90 hover:text-white after:bg-white"
+                className="font-body text-sm font-medium transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 hover:after:w-full after:transition-all after:duration-300 text-foreground/90 hover:text-foreground after:bg-foreground"
               >
                 {item.label}
               </a>
@@ -65,7 +65,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-white"
+            className="lg:hidden p-2 text-foreground"
             aria-label="Menu"
           >
             {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
