@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import henriCoLogo from "@/assets/henri-co-logo.png";
 
 const navItems = [
   { label: "Início", href: "#inicio" },
@@ -32,12 +33,18 @@ const Header = () => {
     >
       <div className="container mx-auto px-3 sm:px-4">
         <div className="flex items-center justify-between h-16 sm:h-20">
-          {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-3">
+          {/* Logos */}
+          <a href="#inicio" className="flex items-center gap-4">
             <img
               src="/logo-dark.png"
               alt="Henri Perfumaria - Logo"
               className="h-12 sm:h-16 w-auto drop-shadow-sm"
+            />
+            <div className="w-px h-8 sm:h-10 bg-foreground/20" />
+            <img
+              src={henriCoLogo}
+              alt="Henri.Co - Logo"
+              className="h-10 sm:h-14 w-auto drop-shadow-sm"
             />
           </a>
 
