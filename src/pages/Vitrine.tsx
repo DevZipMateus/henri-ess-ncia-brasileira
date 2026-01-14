@@ -12,17 +12,20 @@ const navItems = [
   { label: "Vitrine", href: "/vitrine" },
 ];
 
-const HEADER_HEIGHT = 80;
+const getHeaderHeight = () => window.innerWidth < 640 ? 64 : 80;
 
 const Vitrine = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [headerHeight, setHeaderHeight] = useState(getHeaderHeight());
   const [iframeHeight, setIframeHeight] = useState(
-    window.innerHeight - HEADER_HEIGHT
+    window.innerHeight - getHeaderHeight()
   );
 
   useEffect(() => {
     const handleResize = () => {
-      setIframeHeight(window.innerHeight - HEADER_HEIGHT);
+      const newHeaderHeight = getHeaderHeight();
+      setHeaderHeight(newHeaderHeight);
+      setIframeHeight(window.innerHeight - newHeaderHeight);
     };
 
     window.addEventListener("resize", handleResize);
@@ -48,16 +51,16 @@ const Vitrine = () => {
   return (
     <PageTransition>
       <div className="fixed inset-0 w-full h-full overflow-hidden bg-background">
-        {/* Header - 80px */}
-        <header className="fixed top-0 left-0 right-0 z-50 bg-black shadow-elegant" style={{ height: `${HEADER_HEIGHT}px` }}>
-          <div className="container mx-auto px-4 h-full">
+        {/* Header */}
+        <header className="fixed top-0 left-0 right-0 z-50 bg-black shadow-elegant h-16 sm:h-20">
+          <div className="container mx-auto px-3 sm:px-4 h-full">
             <div className="flex items-center justify-between h-full">
               {/* Logo */}
-              <Link to="/" className="flex items-center gap-3">
+              <Link to="/" className="flex items-center gap-2 sm:gap-3">
                 <img
                   src="/logo.png"
                   alt="Henri Perfumaria - Logo"
-                  className="h-16 w-auto drop-shadow-sm"
+                  className="h-10 sm:h-12 md:h-14 w-auto drop-shadow-sm"
                 />
               </Link>
 
@@ -148,7 +151,7 @@ const Vitrine = () => {
         <main 
           className="w-full overflow-hidden"
           style={{ 
-            marginTop: `${HEADER_HEIGHT}px`,
+            marginTop: `${headerHeight}px`,
             height: `${iframeHeight}px`
           }}
         >
