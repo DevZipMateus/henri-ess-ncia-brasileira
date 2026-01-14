@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { ExternalLink, ShoppingBag, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import perfumesArabes from "@/assets/perfumes-arabes.jpg";
-import perfumesOrientais from "@/assets/perfumes-orientais.png";
+import perfumariaInternacional from "@/assets/perfumaria-internacional.jpeg";
 import linhaHome from "@/assets/linha-home.jpg";
 import henriCo from "@/assets/henri-co.jpg";
 
@@ -15,9 +15,9 @@ const products = [
     image: perfumesArabes,
   },
   {
-    title: "Perfumes Importados",
+    title: "Perfumaria Internacional Importada",
     description: "Seleção premium das melhores casas de perfumaria internacional, 100% originais com garantia de procedência.",
-    image: perfumesOrientais,
+    image: perfumariaInternacional,
   },
   {
     title: "Linha Home",
