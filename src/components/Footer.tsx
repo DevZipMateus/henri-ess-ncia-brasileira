@@ -4,12 +4,12 @@ import footerSkyline from "@/assets/footer-skyline.png";
 const Footer = () => {
   return (
     <footer
-      className="text-foreground/90 py-10 sm:py-16 relative bg-background"
+      className="text-foreground/90 py-10 sm:py-12 md:py-16 pb-24 sm:pb-28 md:pb-36 relative bg-background"
       style={{
         backgroundImage: `url(${footerSkyline})`,
         backgroundRepeat: 'repeat-x',
         backgroundPosition: 'bottom center',
-        backgroundSize: 'auto 120px'
+        backgroundSize: 'auto 80px'
       }}
     >
       <div className="container mx-auto px-4 sm:px-6">
