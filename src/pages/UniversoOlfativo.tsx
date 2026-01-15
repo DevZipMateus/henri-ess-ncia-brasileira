@@ -5,6 +5,9 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { Sparkles } from "lucide-react";
 import heroBg from "@/assets/universo-hero-bg.jpeg";
 import spicesBg from "@/assets/universo-spices-bg.jpeg";
+import arabicPerfumes from "@/assets/arabic-perfumes-luxury.jpg";
+import arabicIncense from "@/assets/arabic-incense-luxury.jpg";
+import oudWood from "@/assets/oud-wood-luxury.jpg";
 
 const UniversoOlfativo = () => {
   const fragranceTypes = [
@@ -91,6 +94,73 @@ const UniversoOlfativo = () => {
                 Enquanto a perfumaria tradicional prioriza suavidade e rápida evaporação, a perfumaria árabe nasce da tradição milenar de óleos essenciais, resinas, especiarias e madeiras preciosas. O resultado? Perfumes que evoluem na pele, fixam por horas e deixam assinatura.
               </motion.p>
             </div>
+          </div>
+        </section>
+
+        {/* Luxury Gallery */}
+        <section className="py-16 lg:py-24 bg-foreground/5">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto"
+            >
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="group relative overflow-hidden rounded-2xl aspect-square"
+              >
+                <img 
+                  src={arabicPerfumes} 
+                  alt="Coleção de perfumes árabes de luxo com detalhes dourados" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <p className="absolute bottom-4 left-4 right-4 text-white font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm">
+                  Frascos com acabamento premium
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="group relative overflow-hidden rounded-2xl aspect-square"
+              >
+                <img 
+                  src={arabicIncense} 
+                  alt="Incensário árabe dourado com bakhoor queimando" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <p className="absolute bottom-4 left-4 right-4 text-white font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm">
+                  Tradição milenar em incensos
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="group relative overflow-hidden rounded-2xl aspect-square"
+              >
+                <img 
+                  src={oudWood} 
+                  alt="Madeira de oud e resinas preciosas em bandeja dourada" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <p className="absolute bottom-4 left-4 right-4 text-white font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm">
+                  Oud e resinas preciosas
+                </p>
+              </motion.div>
+            </motion.div>
           </div>
         </section>
 
