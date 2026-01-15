@@ -136,15 +136,15 @@ const UniversoOlfativo = () => {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
-                    <span className="text-foreground/90">Maior concentração de óleos essenciais</span>
+                    <span className="text-foreground/90">Maior concentração de óleos essenciais;</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
-                    <span className="text-foreground/90">Notas intensas como âmbar, oud, especiarias orientais, almíscar e flores nobres</span>
+                    <span className="text-foreground/90">Notas intensas como âmbar, oud, especiarias orientais, almíscar e flores nobres;</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
-                    <span className="text-foreground/90">Estrutura olfativa pensada para longa duração e projeção elegante</span>
+                    <span className="text-foreground/90">Estrutura olfativa pensada para longa duração e projeção elegante;</span>
                   </li>
                 </ul>
                 <p className="text-lg text-foreground/90 mt-6 pt-6 border-t border-border">
