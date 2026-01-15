@@ -12,7 +12,7 @@ const UniversoOlfativo = () => {
   const fragranceTypes = [
     {
       title: "Contratipo",
-      description: "Criado para reproduzir com máxima fidelidade perfumes famosos do mercado. Mantém o mesmo DNA olfativo, oferecendo uma experiência muito próxima ao original, com excelente custo-benefício.",
+      description: "Criado para reproduzir com máxima fidelidade perfumes famosos do mercado. Mantém o mesmo DNA olfativo, oferecendo uma experiência muito próxima à referência, com excelente custo-benefício.",
       ideal: "Ideal para quem busca semelhança e performance."
     },
     {
