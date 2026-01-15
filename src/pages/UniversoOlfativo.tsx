@@ -201,9 +201,9 @@ const UniversoOlfativo = () => {
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                     className="bg-background border-2 border-primary/20 rounded-2xl p-6 hover:border-primary/40 transition-colors duration-300"
                   >
-                    <div className="flex items-center gap-2 mb-3">
+                    <div className="flex items-center justify-center gap-2 mb-3">
                       <Sparkles className="text-primary" size={20} />
-                      <h3 className="font-display text-lg text-foreground">{type.title}</h3>
+                      <h3 className="font-display text-lg text-foreground text-center">{type.title}</h3>
                       <Sparkles className="text-primary" size={20} />
                     </div>
                     <p className="text-foreground/80 leading-relaxed mb-3 text-sm">
