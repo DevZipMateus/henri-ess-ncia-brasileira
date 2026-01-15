@@ -3,6 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Sparkles } from "lucide-react";
+import heroBg from "@/assets/universo-hero-bg.jpeg";
+import spicesBg from "@/assets/universo-spices-bg.jpeg";
 
 const UniversoOlfativo = () => {
   const fragranceTypes = [
@@ -42,8 +44,12 @@ const UniversoOlfativo = () => {
       
       <main className="pt-24">
         {/* Hero Section */}
-        <section className="relative py-20 lg:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent" />
+        <section className="relative py-32 lg:py-48 overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${heroBg})` }}
+          />
+          <div className="absolute inset-0 bg-black/50" />
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -51,10 +57,10 @@ const UniversoOlfativo = () => {
               transition={{ duration: 0.8 }}
               className="text-center max-w-4xl mx-auto"
             >
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-white mb-6 drop-shadow-lg">
                 Perfumes Árabes
               </h1>
-              <p className="text-xl md:text-2xl text-foreground/80 font-light">
+              <p className="text-xl md:text-2xl text-white/90 font-light drop-shadow-md">
                 Onde intensidade, qualidade e identidade se encontram
               </p>
             </motion.div>
@@ -89,8 +95,13 @@ const UniversoOlfativo = () => {
         </section>
 
         {/* Why Arab Perfumes Last Longer */}
-        <section className="py-16 lg:py-24 bg-foreground/5">
-          <div className="container mx-auto px-4">
+        <section className="relative py-16 lg:py-24 overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${spicesBg})` }}
+          />
+          <div className="absolute inset-0 bg-black/70" />
+          <div className="container mx-auto px-4 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -98,14 +109,14 @@ const UniversoOlfativo = () => {
               transition={{ duration: 0.6 }}
               className="max-w-3xl mx-auto"
             >
-              <h2 className="font-display text-3xl md:text-4xl text-foreground text-center mb-8">
+              <h2 className="font-display text-3xl md:text-4xl text-white text-center mb-8">
                 Por que os perfumes árabes fixam mais?
               </h2>
               <p className="text-xl text-center text-primary font-medium mb-10">
                 A diferença está na essência.
               </p>
               
-              <div className="bg-background rounded-2xl p-8 shadow-elegant">
+              <div className="bg-background/95 backdrop-blur-sm rounded-2xl p-8 shadow-elegant">
                 <p className="text-lg text-foreground/90 mb-6">Os perfumes árabes possuem:</p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
