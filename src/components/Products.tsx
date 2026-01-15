@@ -91,7 +91,7 @@ const Products = () => {
                   <h3 className="font-display text-xl sm:text-2xl md:text-3xl text-white mb-1 sm:mb-2 group-hover:text-gold transition-colors duration-300">
                     {product.title}
                   </h3>
-                  <p className="font-body text-xs sm:text-sm text-white/80 leading-relaxed line-clamp-2 sm:line-clamp-none">
+                  <p className="font-body text-xs sm:text-sm text-white/80 leading-relaxed line-clamp-2 sm:line-clamp-none text-justify">
                     {product.description}
                   </p>
                 </div>
