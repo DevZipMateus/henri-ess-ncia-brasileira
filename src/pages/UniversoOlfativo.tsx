@@ -133,7 +133,7 @@ const UniversoOlfativo = () => {
               
               <div className="bg-background/95 backdrop-blur-sm rounded-2xl p-8 shadow-elegant">
                 <p className="text-lg text-foreground/90 mb-6">Os perfumes árabes possuem:</p>
-                <ul className="space-y-4">
+                <ul className="space-y-4 text-left">
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">•</span>
                     <span className="text-foreground/90">Maior concentração de óleos essenciais;</span>
