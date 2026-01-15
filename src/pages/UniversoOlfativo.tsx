@@ -33,11 +33,11 @@ const UniversoOlfativo = () => {
   ];
 
   const benefits = [
-    "Fixação prolongada",
-    "Projeção sofisticada",
-    "Qualidade superior",
+    "Fixação Prolongada",
+    "Projeção Sofisticada",
+    "Qualidade Superior",
     "Exclusividade",
-    "Identidade olfativa"
+    "Identidade Olfativa"
   ];
 
   return (
