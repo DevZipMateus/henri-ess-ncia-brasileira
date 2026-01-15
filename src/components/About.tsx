@@ -12,7 +12,7 @@ const values = [
   },
   {
     icon: Star,
-    title: "Excelência Em Experiência",
+    title: "Excelência em Experiência",
     description: "O cliente no centro de tudo, com atendimento exclusivo e atenção aos detalhes.",
   },
   {
@@ -22,7 +22,7 @@ const values = [
   },
   {
     icon: Heart,
-    title: "Paixão Pela Alta Perfumaria",
+    title: "Paixão pela Alta Perfumaria",
     description: "Conhecimento, sensibilidade e dedicação em cada escolha.",
   },
 ];
