@@ -1,8 +1,15 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, CreditCard } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import headerLogos from "@/assets/header-logos-combined.png";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const navItems = [
   { label: "Início", href: "/#inicio" },
@@ -88,6 +95,43 @@ const Header = () => {
             )}
           </nav>
 
+          {/* Payment Methods Button Desktop */}
+          <Dialog>
+            <DialogTrigger asChild>
+              <button className="hidden lg:inline-flex items-center gap-2 px-4 xl:px-6 py-2 xl:py-2.5 border border-foreground/20 text-foreground font-body text-xs xl:text-sm font-medium rounded-sm hover:bg-foreground/5 transition-all duration-300">
+                <CreditCard size={16} />
+                Formas de Pagamento
+              </button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-md">
+              <DialogHeader>
+                <DialogTitle className="text-xl font-display">Formas de Pagamento</DialogTitle>
+              </DialogHeader>
+              <div className="space-y-4 pt-4">
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Pensando em oferecer uma experiência completa, do aroma à finalização da sua compra, disponibilizamos condições especiais para você escolher com tranquilidade:
+                </p>
+                
+                <div className="space-y-4">
+                  <div className="p-4 bg-muted/50 rounded-lg">
+                    <h4 className="font-semibold text-foreground mb-2">À Vista</h4>
+                    <p className="text-sm text-muted-foreground">
+                      • 5% de desconto para pagamentos em Pix ou dinheiro.
+                    </p>
+                  </div>
+                  
+                  <div className="p-4 bg-muted/50 rounded-lg">
+                    <h4 className="font-semibold text-foreground mb-2">Cartão de Crédito</h4>
+                    <ul className="text-sm text-muted-foreground space-y-1">
+                      <li>• Até 2x sem juros em compras de até R$ 500,00.</li>
+                      <li>• Até 3x sem juros em compras acima de R$ 500,00.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </DialogContent>
+          </Dialog>
+
           {/* CTA Button Desktop */}
           <a
             href="https://wa.me/5517996596204"
@@ -136,9 +180,47 @@ const Header = () => {
                   </Link>
                 )
               )}
+              
+              {/* Payment Methods Mobile */}
+              <Dialog>
+                <DialogTrigger asChild>
+                  <button className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-foreground/20 text-foreground font-body text-sm font-medium rounded-sm">
+                    <CreditCard size={16} />
+                    Formas de Pagamento
+                  </button>
+                </DialogTrigger>
+                <DialogContent className="sm:max-w-md">
+                  <DialogHeader>
+                    <DialogTitle className="text-xl font-display">Formas de Pagamento</DialogTitle>
+                  </DialogHeader>
+                  <div className="space-y-4 pt-4">
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      Pensando em oferecer uma experiência completa, do aroma à finalização da sua compra, disponibilizamos condições especiais para você escolher com tranquilidade:
+                    </p>
+                    
+                    <div className="space-y-4">
+                      <div className="p-4 bg-muted/50 rounded-lg">
+                        <h4 className="font-semibold text-foreground mb-2">À Vista</h4>
+                        <p className="text-sm text-muted-foreground">
+                          • 5% de desconto para pagamentos em Pix ou dinheiro.
+                        </p>
+                      </div>
+                      
+                      <div className="p-4 bg-muted/50 rounded-lg">
+                        <h4 className="font-semibold text-foreground mb-2">Cartão de Crédito</h4>
+                        <ul className="text-sm text-muted-foreground space-y-1">
+                          <li>• Até 2x sem juros em compras de até R$ 500,00.</li>
+                          <li>• Até 3x sem juros em compras acima de R$ 500,00.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </DialogContent>
+              </Dialog>
+
               <a
                 href="https://wa.me/5517996596204"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-body text-sm font-medium rounded-sm mt-2"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-body text-sm font-medium rounded-sm"
               >
                 Fale conosco
               </a>
