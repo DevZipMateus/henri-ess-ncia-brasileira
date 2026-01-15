@@ -6,7 +6,6 @@ import { Sparkles } from "lucide-react";
 import heroBg from "@/assets/universo-hero-bg.jpeg";
 import spicesBg from "@/assets/universo-spices-bg.jpeg";
 import arabicPerfumes from "@/assets/arabic-perfumes-luxury.jpg";
-import arabicIncense from "@/assets/arabic-incense-luxury.jpg";
 import oudWood from "@/assets/oud-wood-luxury.jpg";
 
 const UniversoOlfativo = () => {
@@ -70,97 +69,43 @@ const UniversoOlfativo = () => {
           </div>
         </section>
 
-        {/* Introduction */}
+        {/* Introduction with Image */}
         <section className="py-16 lg:py-24">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto space-y-6 text-center">
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="text-lg text-foreground/90 leading-relaxed"
+                className="space-y-6"
               >
-                Os perfumes árabes não seguem tendências: eles criam presença.
-                Reconhecidos mundialmente pela sua alta concentração, matérias-primas nobres e performance superior, essas fragrâncias são feitas para quem valoriza exclusividade, sofisticação e longa duração.
-              </motion.p>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                <p className="text-lg text-foreground/90 leading-relaxed">
+                  Os perfumes árabes não seguem tendências: eles criam presença.
+                  Reconhecidos mundialmente pela sua alta concentração, matérias-primas nobres e performance superior, essas fragrâncias são feitas para quem valoriza exclusividade, sofisticação e longa duração.
+                </p>
+                <p className="text-lg text-foreground/90 leading-relaxed">
+                  Enquanto a perfumaria tradicional prioriza suavidade e rápida evaporação, a perfumaria árabe nasce da tradição milenar de óleos essenciais, resinas, especiarias e madeiras preciosas. O resultado? Perfumes que evoluem na pele, fixam por horas e deixam assinatura.
+                </p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-lg text-foreground/90 leading-relaxed"
+                className="relative"
               >
-                Enquanto a perfumaria tradicional prioriza suavidade e rápida evaporação, a perfumaria árabe nasce da tradição milenar de óleos essenciais, resinas, especiarias e madeiras preciosas. O resultado? Perfumes que evoluem na pele, fixam por horas e deixam assinatura.
-              </motion.p>
+                <div className="overflow-hidden rounded-2xl shadow-elegant">
+                  <img 
+                    src={arabicPerfumes} 
+                    alt="Coleção de perfumes árabes de luxo com detalhes dourados" 
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
+                <div className="absolute -top-4 -right-4 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
+              </motion.div>
             </div>
-          </div>
-        </section>
-
-        {/* Luxury Gallery */}
-        <section className="py-16 lg:py-24 bg-foreground/5">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto"
-            >
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="group relative overflow-hidden rounded-2xl aspect-square"
-              >
-                <img 
-                  src={arabicPerfumes} 
-                  alt="Coleção de perfumes árabes de luxo com detalhes dourados" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <p className="absolute bottom-4 left-4 right-4 text-white font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm">
-                  Frascos com acabamento premium
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="group relative overflow-hidden rounded-2xl aspect-square"
-              >
-                <img 
-                  src={arabicIncense} 
-                  alt="Incensário árabe dourado com bakhoor queimando" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <p className="absolute bottom-4 left-4 right-4 text-white font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm">
-                  Tradição milenar em incensos
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="group relative overflow-hidden rounded-2xl aspect-square"
-              >
-                <img 
-                  src={oudWood} 
-                  alt="Madeira de oud e resinas preciosas em bandeja dourada" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <p className="absolute bottom-4 left-4 right-4 text-white font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm">
-                  Oud e resinas preciosas
-                </p>
-              </motion.div>
-            </motion.div>
           </div>
         </section>
 
@@ -210,7 +155,7 @@ const UniversoOlfativo = () => {
           </div>
         </section>
 
-        {/* Fragrance Types */}
+        {/* Fragrance Types with Image */}
         <section className="py-16 lg:py-24">
           <div className="container mx-auto px-4">
             <motion.h2
@@ -223,29 +168,53 @@ const UniversoOlfativo = () => {
               Entenda os Tipos de Fragrâncias
             </motion.h2>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              {fragranceTypes.map((type, index) => (
-                <motion.div
-                  key={type.title}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-background border-2 border-primary/20 rounded-2xl p-8 hover:border-primary/40 transition-colors duration-300"
-                >
-                  <div className="flex items-center gap-3 mb-4">
-                    <Sparkles className="text-primary" size={24} />
-                    <h3 className="font-display text-xl text-foreground">{type.title}</h3>
-                    <Sparkles className="text-primary" size={24} />
-                  </div>
-                  <p className="text-foreground/80 leading-relaxed mb-4">
-                    {type.description}
+            <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Oud Image - Left side */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="hidden lg:block relative"
+              >
+                <div className="sticky top-32 overflow-hidden rounded-2xl shadow-elegant">
+                  <img 
+                    src={oudWood} 
+                    alt="Madeira de oud e resinas preciosas - ingredientes nobres da perfumaria árabe" 
+                    className="w-full h-auto object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <p className="absolute bottom-4 left-4 right-4 text-white text-sm font-medium">
+                    Oud e resinas preciosas
                   </p>
-                  <p className="text-primary font-medium text-sm">
-                    {type.ideal}
-                  </p>
-                </motion.div>
-              ))}
+                </div>
+              </motion.div>
+
+              {/* Fragrance Cards - Right side */}
+              <div className="lg:col-span-2 grid sm:grid-cols-2 gap-6">
+                {fragranceTypes.map((type, index) => (
+                  <motion.div
+                    key={type.title}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    className="bg-background border-2 border-primary/20 rounded-2xl p-6 hover:border-primary/40 transition-colors duration-300"
+                  >
+                    <div className="flex items-center gap-2 mb-3">
+                      <Sparkles className="text-primary" size={20} />
+                      <h3 className="font-display text-lg text-foreground">{type.title}</h3>
+                      <Sparkles className="text-primary" size={20} />
+                    </div>
+                    <p className="text-foreground/80 leading-relaxed mb-3 text-sm">
+                      {type.description}
+                    </p>
+                    <p className="text-primary font-medium text-xs">
+                      {type.ideal}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
