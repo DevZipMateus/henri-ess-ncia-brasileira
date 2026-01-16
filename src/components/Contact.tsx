@@ -51,7 +51,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="font-body text-muted-foreground max-w-2xl mx-auto text-center mb-10 sm:mb-16 text-sm sm:text-base"
+            className="font-body text-muted-foreground max-w-2xl mx-auto text-left mb-10 sm:mb-16 text-sm sm:text-base"
           >
             Entre em contato conosco e agende sua visita para uma experiência olfativa exclusiva, com atendimento personalizado e individualizado.
           </motion.p>
@@ -134,10 +134,10 @@ const Contact = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="glass-card rounded-sm p-6 sm:p-8 md:p-10 flex flex-col justify-center border-l-4 border-divider"
             >
-              <h3 className="font-display text-xl sm:text-2xl md:text-3xl text-foreground mb-3 sm:mb-4 text-center">
+              <h3 className="font-display text-xl sm:text-2xl md:text-3xl text-foreground mb-3 sm:mb-4 text-left">
                 Agende Sua Visita
               </h3>
-              <p className="font-body text-muted-foreground text-center mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
+              <p className="font-body text-muted-foreground text-left mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
                 Venha conhecer nossa curadoria exclusiva de perfumes importados e árabes. Oferecemos um atendimento personalizado para ajudá-lo a encontrar a fragrância perfeita.
               </p>
               <a
