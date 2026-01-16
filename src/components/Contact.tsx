@@ -70,7 +70,7 @@ const Contact = () => {
                   <Star className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-display text-lg sm:text-xl text-foreground mb-1">Atendimento</h3>
+                  <h3 className="font-display text-lg sm:text-xl text-foreground mb-1 text-left">Atendimento</h3>
                   <p className="font-body text-sm sm:text-base text-muted-foreground">
                     Atendimento personalizado<br />
                     para mais exclusividade
@@ -84,7 +84,7 @@ const Contact = () => {
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-display text-lg sm:text-xl text-foreground mb-1">Telefone</h3>
+                  <h3 className="font-display text-lg sm:text-xl text-foreground mb-1 text-left">Telefone</h3>
                   <a
                     href="https://wa.me/5517996596204"
                     className="font-body text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors"
@@ -100,7 +100,7 @@ const Contact = () => {
                   <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-display text-lg sm:text-xl text-foreground mb-1">Horário de funcionamento</h3>
+                  <h3 className="font-display text-lg sm:text-xl text-foreground mb-1 text-left">Horário de funcionamento</h3>
                   <p className="font-body text-sm sm:text-base text-muted-foreground">
                     Segunda a Sábado: 09:00 às 20:00<br />
                     Domingo: 11:00 às 17:00
@@ -114,7 +114,7 @@ const Contact = () => {
                   <Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-display text-lg sm:text-xl text-foreground mb-1">Instagram</h3>
+                  <h3 className="font-display text-lg sm:text-xl text-foreground mb-1 text-left">Instagram</h3>
                   <a
                     href="https://www.instagram.com/perfumaria.henri"
                     target="_blank"
