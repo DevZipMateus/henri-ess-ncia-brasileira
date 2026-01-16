@@ -71,7 +71,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-display text-lg sm:text-xl text-foreground mb-1 text-left">Atendimento</h3>
-                  <p className="font-body text-sm sm:text-base text-muted-foreground">
+                  <p className="font-body text-sm sm:text-base text-muted-foreground text-left">
                     Atendimento personalizado<br />
                     para mais exclusividade
                   </p>
@@ -87,7 +87,7 @@ const Contact = () => {
                   <h3 className="font-display text-lg sm:text-xl text-foreground mb-1 text-left">Telefone</h3>
                   <a
                     href="https://wa.me/5517996596204"
-                    className="font-body text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors"
+                    className="font-body text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors text-left block"
                   >
                     (17) 99659-6204
                   </a>
@@ -101,7 +101,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-display text-lg sm:text-xl text-foreground mb-1 text-left">Horário de funcionamento</h3>
-                  <p className="font-body text-sm sm:text-base text-muted-foreground">
+                  <p className="font-body text-sm sm:text-base text-muted-foreground text-left">
                     Segunda a Sábado: 09:00 às 20:00<br />
                     Domingo: 11:00 às 17:00
                   </p>
@@ -119,7 +119,7 @@ const Contact = () => {
                     href="https://www.instagram.com/perfumaria.henri"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-body text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors"
+                    className="font-body text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors text-left block"
                   >
                     @perfumaria.henri
                   </a>
