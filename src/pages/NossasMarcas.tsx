@@ -15,6 +15,8 @@ import lattafaLogo from "@/assets/brands/lattafa.jpeg";
 import leChameauLogo from "@/assets/brands/le-chameau.jpeg";
 import parisCornerLogo from "@/assets/brands/paris-corner.jpeg";
 import laFlorentinaLogo from "@/assets/brands/la-florentina.jpeg";
+import orienticaLogo from "@/assets/brands/orientica.webp";
+import maisonAlhambraLogo from "@/assets/brands/maison-alhambra.webp";
 import brandsHero from "@/assets/brands/brands-hero.webp";
 
 const brands = [
@@ -77,14 +79,14 @@ const brands = [
   {
     name: "MAISON ALHAMBRA",
     origin: "Emirados Árabes Unidos",
-    logo: null,
+    logo: maisonAlhambraLogo,
     description: "Linha do grupo Lattafa, a Maison Alhambra foi criada para oferecer perfumes inspirados em fragrâncias de luxo. A marca se destaca pelo alto nível de similaridade olfativa, frascos sofisticados e ótima performance.",
     focus: "Perfumes inspirados premium (contratipos de luxo).",
   },
   {
     name: "ORIENTICA",
     origin: "Emirados Árabes Unidos",
-    logo: null,
+    logo: orienticaLogo,
     description: "A Orientica combina tradição e modernidade, criando fragrâncias intensas, refinadas e com matérias-primas de alta qualidade, além de apresentações luxuosas.",
     focus: "Perfumes orientais de alto padrão e sofisticação.",
   },
