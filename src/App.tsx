@@ -7,6 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import Index from "./pages/Index";
 import Vitrine from "./pages/Vitrine";
 import UniversoOlfativo from "./pages/UniversoOlfativo";
+import NossasMarcas from "./pages/NossasMarcas";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<Index />} />
         <Route path="/vitrine" element={<Vitrine />} />
         <Route path="/universo-olfativo" element={<UniversoOlfativo />} />
+        <Route path="/nossas-marcas" element={<NossasMarcas />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>

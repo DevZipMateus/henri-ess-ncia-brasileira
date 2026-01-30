@@ -17,6 +17,7 @@ const navItems = [
   { label: "Produtos", href: "/#produtos" },
   { label: "Contato", href: "/#contato" },
   { label: "Universo Olfativo Árabe", href: "/universo-olfativo" },
+  { label: "Nossas Marcas", href: "/nossas-marcas" },
   { label: "Vitrine", href: "/vitrine" },
 ];
 
