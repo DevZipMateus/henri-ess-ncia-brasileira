@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Clock, Instagram, Phone, Star } from "lucide-react";
+import { Clock, Instagram, MapPin, Phone, Star } from "lucide-react";
 import dubaiNight from "@/assets/dubai-night.jpg";
 
 const Contact = () => {
