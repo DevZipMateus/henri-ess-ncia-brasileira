@@ -99,6 +99,13 @@ const brands = [
     focus: "Perfumes inspirados premium, modernos e versáteis.",
   },
   {
+    name: "NUSUK",
+    origin: "Emirados Árabes Unidos",
+    logo: nusukLogo,
+    description: "Fundada nos Emirados Árabes Unidos, a Nusuk surge com a proposta de traduzir a riqueza da perfumaria oriental em criações contemporâneas, acessíveis e marcantes. A marca vem ganhando destaque no mercado por oferecer fragrâncias intensas, elegantes e com excelente performance, refletindo o luxo característico do Oriente Médio aliado a uma leitura moderna.",
+    focus: "Perfumes sofisticados, de alta projeção e fixação, com identidade olfativa marcante e excelente custo-benefício.",
+  },
+  {
     name: "LA FLORENTINA",
     origin: "Itália",
     logo: laFlorentinaLogo,

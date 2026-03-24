@@ -204,16 +204,17 @@ const Header = () => {
                     <div className="space-y-4">
                       <div className="p-4 bg-muted/50 rounded-lg">
                         <h4 className="font-semibold text-foreground mb-2">À Vista</h4>
-                        <p className="text-sm text-muted-foreground">
-                          • 5% de desconto para pagamentos em Pix ou dinheiro.
-                        </p>
+                        <ul className="text-sm text-muted-foreground space-y-1">
+                          <li>• 5% de desconto para pagamentos via Pix.</li>
+                          <li>• Valores anunciados válidos para pagamentos em dinheiro ou débito.</li>
+                        </ul>
                       </div>
                       
                       <div className="p-4 bg-muted/50 rounded-lg">
                         <h4 className="font-semibold text-foreground mb-2">Cartão de Crédito</h4>
                         <ul className="text-sm text-muted-foreground space-y-1">
-                          <li>• Até 2x sem juros em compras de até R$ 500,00.</li>
-                          <li>• Até 3x sem juros em compras acima de R$ 500,00.</li>
+                          <li>• Parcelamento em até 10x sem juros.</li>
+                          <li>• Parcela mínima de R$ 80,00.</li>
                         </ul>
                       </div>
                     </div>

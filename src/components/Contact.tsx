@@ -118,8 +118,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-display text-lg sm:text-xl text-foreground mb-1 text-left">Horário de funcionamento</h3>
                   <p className="font-body text-sm sm:text-base text-muted-foreground text-left">
-                    Segunda a Sábado: 09:00 às 20:00<br />
-                    Domingo: 11:00 às 17:00
+                    Segunda a Sábado: 09:00 às 22:00<br />
+                    Domingo: 11:00 às 20:00
                   </p>
                 </div>
               </div>
