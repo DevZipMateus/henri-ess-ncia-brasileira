@@ -151,7 +151,7 @@ const NossasMarcas = () => {
                 className="space-y-6"
               >
                 <p className="font-body text-base sm:text-lg text-foreground/80 leading-relaxed text-justify">
-                  Trabalhamos com perfumaria internacional importada, oferecendo fragrâncias originais de grandes casas reconhecidas mundialmente. Nosso portfólio inclui marcas consagradas como Dior, Paco Rabanne, Carolina Herrera, Yves Saint Laurent, Giorgio Armani, Ralph Lauren, entre outras referências do mercado internacional.
+                  Trabalhamos com perfumaria internacional importada, oferecendo fragrâncias originais de grandes casas reconhecidas mundialmente. Nosso portfólio inclui marcas consagradas como Dior, Paco Rabanne, Carolina Herrera, Yves Saint Laurent, Giorgio Armani, Ralph Lauren, Chloé, Dolce & Gabbana, Versace, Prada, Hugo Boss, Calvin Klein, Lancôme, Mont Blanc, Issey Miyake, Joop! e Marina de Bourbon, entre outras referências do mercado internacional.
                 </p>
                 <p className="font-body text-base sm:text-lg text-foreground/80 leading-relaxed text-justify">
                   Além das grandes grifes, também selecionamos cuidadosamente marcas renomadas da perfumaria árabe e europeia, conhecidas pela alta qualidade, excelente fixação, projeção marcante e ótimo custo-benefício. Cada marca possui uma identidade própria, atendendo diferentes estilos, preferências e experiências olfativas.
