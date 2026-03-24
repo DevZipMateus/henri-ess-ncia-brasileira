@@ -17,6 +17,7 @@ import parisCornerLogo from "@/assets/brands/paris-corner.jpeg";
 import laFlorentinaLogo from "@/assets/brands/la-florentina.jpeg";
 import orienticaLogo from "@/assets/brands/orientica.webp";
 import maisonAlhambraLogo from "@/assets/brands/maison-alhambra.webp";
+import nusukLogo from "@/assets/brands/nusuk.jpeg";
 import brandsHero from "@/assets/brands/brands-hero.webp";
 
 const brands = [
