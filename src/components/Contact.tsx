@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Clock, Instagram, Phone, Star } from "lucide-react";
+import { Clock, Instagram, MapPin, Phone, Star } from "lucide-react";
 import dubaiNight from "@/assets/dubai-night.jpg";
 
 const Contact = () => {
@@ -78,6 +78,22 @@ const Contact = () => {
                 </div>
               </div>
 
+              {/* Address */}
+              <div className="flex gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-display text-lg sm:text-xl text-foreground mb-1 text-left">Endereço</h3>
+                  <p className="font-body text-sm sm:text-base text-muted-foreground text-left">
+                    Rua Dr. Presciliano Pinto 3103<br />
+                    Edifício Empresarial Noruega - Sala 10<br />
+                    Bairro Santos Dumont<br />
+                    São José do Rio Preto-SP
+                  </p>
+                </div>
+              </div>
+
               {/* Phone */}
               <div className="flex gap-3 sm:gap-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -102,8 +118,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-display text-lg sm:text-xl text-foreground mb-1 text-left">Horário de funcionamento</h3>
                   <p className="font-body text-sm sm:text-base text-muted-foreground text-left">
-                    Segunda a Sábado: 09:00 às 20:00<br />
-                    Domingo: 11:00 às 17:00
+                    Segunda a Sábado: 09:00 às 22:00<br />
+                    Domingo: 11:00 às 20:00
                   </p>
                 </div>
               </div>

@@ -17,6 +17,7 @@ import parisCornerLogo from "@/assets/brands/paris-corner.jpeg";
 import laFlorentinaLogo from "@/assets/brands/la-florentina.jpeg";
 import orienticaLogo from "@/assets/brands/orientica.webp";
 import maisonAlhambraLogo from "@/assets/brands/maison-alhambra.webp";
+import nusukLogo from "@/assets/brands/nusuk.jpeg";
 import brandsHero from "@/assets/brands/brands-hero.webp";
 
 const brands = [
@@ -98,6 +99,13 @@ const brands = [
     focus: "Perfumes inspirados premium, modernos e versáteis.",
   },
   {
+    name: "NUSUK",
+    origin: "Emirados Árabes Unidos",
+    logo: nusukLogo,
+    description: "Fundada nos Emirados Árabes Unidos, a Nusuk surge com a proposta de traduzir a riqueza da perfumaria oriental em criações contemporâneas, acessíveis e marcantes. A marca vem ganhando destaque no mercado por oferecer fragrâncias intensas, elegantes e com excelente performance, refletindo o luxo característico do Oriente Médio aliado a uma leitura moderna.",
+    focus: "Perfumes sofisticados, de alta projeção e fixação, com identidade olfativa marcante e excelente custo-benefício.",
+  },
+  {
     name: "LA FLORENTINA",
     origin: "Itália",
     logo: laFlorentinaLogo,
@@ -150,7 +158,7 @@ const NossasMarcas = () => {
                 className="space-y-6"
               >
                 <p className="font-body text-base sm:text-lg text-foreground/80 leading-relaxed text-justify">
-                  Trabalhamos com perfumaria internacional importada, oferecendo fragrâncias originais de grandes casas reconhecidas mundialmente. Nosso portfólio inclui marcas consagradas como Dior, Paco Rabanne, Carolina Herrera, Yves Saint Laurent, Giorgio Armani, Ralph Lauren, entre outras referências do mercado internacional.
+                  Trabalhamos com perfumaria internacional importada, oferecendo fragrâncias originais de grandes casas reconhecidas mundialmente. Nosso portfólio inclui marcas consagradas como Dior, Paco Rabanne, Carolina Herrera, Yves Saint Laurent, Giorgio Armani, Ralph Lauren, Chloé, Dolce & Gabbana, Versace, Prada, Hugo Boss, Calvin Klein, Lancôme, Mont Blanc, Issey Miyake, Joop! e Marina de Bourbon, entre outras referências do mercado internacional.
                 </p>
                 <p className="font-body text-base sm:text-lg text-foreground/80 leading-relaxed text-justify">
                   Além das grandes grifes, também selecionamos cuidadosamente marcas renomadas da perfumaria árabe e europeia, conhecidas pela alta qualidade, excelente fixação, projeção marcante e ótimo custo-benefício. Cada marca possui uma identidade própria, atendendo diferentes estilos, preferências e experiências olfativas.
